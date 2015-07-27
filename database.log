@@ -1,0 +1,2669 @@
+D, [2015-07-27T09:41:34.713728 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4003', "Aguero, S", 'Manchester City', '£7.5m', 'Striker')
+						 [0m
+D, [2015-07-27T09:41:36.778935 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4146', "Costa, D", 'Chelsea', '£7.2m', 'Striker')
+						 
+D, [2015-07-27T09:41:38.849142 #11664] DEBUG -- :   [1m[36m (27.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4148', "Sanchez, A", 'Arsenal', '£7.1m', 'Striker')
+						 [0m
+D, [2015-07-27T09:41:40.965353 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4004', "Rooney, W", 'Manchester United', '£7.0m', 'Striker')
+						 
+D, [2015-07-27T09:41:42.968554 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4010', "Giroud, O", 'Arsenal', '£6.6m', 'Striker')
+						 [0m
+D, [2015-07-27T09:41:44.999757 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4007', "Sturridge, D", 'Liverpool', '£6.4m', 'Striker')
+						 
+D, [2015-07-27T09:41:47.047961 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4008', "Benteke, C", 'Liverpool', '£6.4m', 'Striker')
+						 [0m
+D, [2015-07-27T09:41:49.234180 #11664] DEBUG -- :   [1m[35m (31.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4179', "Falcao, R", 'Chelsea', '£6.3m', 'Striker')
+						 
+D, [2015-07-27T09:41:51.494406 #11664] DEBUG -- :   [1m[36m (13.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4015', "Lukaku, R", 'Everton', '£6.2m', 'Striker')
+						 [0m
+D, [2015-07-27T09:41:53.717628 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3003', "Hazard, E", 'Chelsea', '£6.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:41:56.007857 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4020', "Dzeko, E", 'Manchester City', '£6.0m', 'Striker')
+						 [0m
+D, [2015-07-27T09:41:58.052062 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4086', "Bony, W", 'Manchester City', '£6.0m', 'Striker')
+						 
+D, [2015-07-27T09:42:00.253282 #11664] DEBUG -- :   [1m[36m (50.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3007', "Silva, D", 'Manchester City', '£5.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:02.360493 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4070', "Kane, H", 'Tottenham Hotspur', '£5.8m', 'Striker')
+						 
+D, [2015-07-27T09:42:04.671724 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4161', "Balotelli, M", 'Liverpool', '£5.8m', 'Striker')
+						 [0m
+D, [2015-07-27T09:42:06.804937 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4030', "Welbeck, D", 'Arsenal', '£5.7m', 'Striker')
+						 
+D, [2015-07-27T09:42:08.837140 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3276', "Fabregas, C", 'Chelsea', '£5.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:11.008357 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4093', "Remy, L", 'Chelsea', '£5.6m', 'Striker')
+						 
+D, [2015-07-27T09:42:12.988555 #11664] DEBUG -- :   [1m[36m (26.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3314', "di Maria, A", 'Manchester United', '£5.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:15.185775 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4129', "Ings, D", 'Liverpool', '£5.5m', 'Striker')
+						 
+D, [2015-07-27T09:42:17.745031 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3235', "Ozil, M", 'Arsenal', '£5.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:19.780234 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4103', "Berahino, S", 'West Bromwich Albion', '£5.4m', 'Striker')
+						 
+D, [2015-07-27T09:42:21.790435 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4149', "Pelle, G", 'Southampton', '£5.4m', 'Striker')
+						 [0m
+D, [2015-07-27T09:42:23.769633 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3001', "Mata, J", 'Manchester United', '£5.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:42:25.904847 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3005', "Toure, Y", 'Manchester City', '£5.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:28.249081 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4017', "Carroll, A", 'West Ham United', '£5.3m', 'Striker')
+						 
+D, [2015-07-27T09:42:30.648321 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3093', "Sterling, R", 'Manchester City', '£5.2m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:32.671523 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4018', "Cisse, P", 'Newcastle United', '£5.2m', 'Striker')
+						 
+D, [2015-07-27T09:42:34.687725 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4155', "Krkic, B", 'Stoke City', '£5.2m', 'Striker')
+						 [0m
+D, [2015-07-27T09:42:36.758932 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3017', "Coutinho, P", 'Liverpool', '£5.1m', 'Midfielder')
+						 
+D, [2015-07-27T09:42:38.783134 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3350', "Schweinsteiger, B", 'Manchester United', '£5.1m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:40.930349 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4002', "Origi, D", 'Liverpool', '£5.1m', 'Striker')
+						 
+D, [2015-07-27T09:42:43.086565 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4024', "Long, S", 'Southampton', '£5.1m', 'Striker')
+						 [0m
+D, [2015-07-27T09:42:45.129769 #11664] DEBUG -- :   [1m[35m (31.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2003', "Ivanovic, B", 'Chelsea', '£5.0m', 'Defender')
+						 
+D, [2015-07-27T09:42:47.563012 #11664] DEBUG -- :   [1m[36m (14.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3004', "Cazorla, S", 'Arsenal', '£5.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:49.529209 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4025', "Rodriguez, J", 'Southampton', '£5.0m', 'Striker')
+						 
+D, [2015-07-27T09:42:51.532409 #11664] DEBUG -- :   [1m[36m (65.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2019', "Terry, J", 'Chelsea', '£4.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:42:53.701626 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3039', "Nasri, S", 'Manchester City', '£4.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:42:55.633819 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3047', "Ramsey, A", 'Arsenal', '£4.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:42:57.564012 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4158', "Sakho, D", 'West Ham United', '£4.9m', 'Striker')
+						 
+D, [2015-07-27T09:42:59.520208 #11664] DEBUG -- :   [1m[36m (29.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3006', "Walcott, T", 'Arsenal', '£4.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:43:01.642420 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3016', "Oscar", 'Chelsea', '£4.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:43:03.667623 #11664] DEBUG -- :   [1m[36m (15.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4142', "Diouf, M", 'Stoke City', '£4.8m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:05.624818 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3227', "Willian", 'Chelsea', '£4.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:43:07.671023 #11664] DEBUG -- :   [1m[36m (28.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3230', "Eriksen, C", 'Tottenham Hotspur', '£4.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:43:09.752231 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3300', "Herrera, A", 'Manchester United', '£4.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:43:11.811437 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4005', "Hernandez, J", 'Manchester United', '£4.7m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:13.721628 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4019', "Defoe, J", 'Sunderland', '£4.7m', 'Striker')
+						 
+D, [2015-07-27T09:43:15.898846 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4023', "Walters, J", 'Stoke City', '£4.7m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:17.957051 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4089', "Jovetic, S", 'Manchester City', '£4.7m', 'Striker')
+						 
+D, [2015-07-27T09:43:19.938250 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4145', "Gomis, B", 'Swansea City', '£4.7m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:21.961452 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4154', "Ulloa, L", 'Leicester City', '£4.7m', 'Striker')
+						 
+D, [2015-07-27T09:43:24.055661 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4180', "Mitrovic, A", 'Newcastle United', '£4.7m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:26.002856 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2022', "Cahill, G", 'Chelsea', '£4.6m', 'Defender')
+						 
+D, [2015-07-27T09:43:27.954051 #11664] DEBUG -- :   [1m[36m (10.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2027', "Koscielny, L", 'Arsenal', '£4.6m', 'Defender')
+						 [0m
+D, [2015-07-27T09:43:29.861242 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3002', "Depay, M", 'Manchester United', '£4.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:43:32.281484 #11664] DEBUG -- :   [1m[36m (27.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3008', "Fellaini, M", 'Manchester United', '£4.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:43:34.199676 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3341', "Firmino, R", 'Liverpool', '£4.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:43:36.923948 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4012', "Lambert, R", 'Liverpool', '£4.6m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:39.063162 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4026', "Adebayor, E", 'Tottenham Hotspur', '£4.6m', 'Striker')
+						 
+D, [2015-07-27T09:43:41.040360 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4040', "Borini, F", 'Liverpool', '£4.6m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:43.033559 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4092', "Soldado, R", 'Tottenham Hotspur', '£4.6m', 'Striker')
+						 
+D, [2015-07-27T09:43:45.236779 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2004', "Baines, L", 'Everton', '£4.5m', 'Defender')
+						 [0m
+D, [2015-07-27T09:43:47.206976 #11664] DEBUG -- :   [1m[35m (27.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2006', "Mertesacker, P", 'Arsenal', '£4.5m', 'Defender')
+						 
+D, [2015-07-27T09:43:49.203176 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2025', "Azpilicueta, C", 'Chelsea', '£4.5m', 'Defender')
+						 [0m
+D, [2015-07-27T09:43:51.113367 #11664] DEBUG -- :   [1m[35m (41.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3018', "Fernandinho", 'Manchester City', '£4.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:43:53.137569 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4027', "Agbonlahor, G", 'Aston Villa', '£4.5m', 'Striker')
+						 [0m
+D, [2015-07-27T09:43:55.140769 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4150', "Valencia, E", 'West Ham United', '£4.5m', 'Striker')
+						 
+D, [2015-07-27T09:43:57.022958 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2011', "Zabaleta, P", 'Manchester City', '£4.4m', 'Defender')
+						 [0m
+D, [2015-07-27T09:43:59.149170 #11664] DEBUG -- :   [1m[35m (48.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3034', "Wilshere, J", 'Arsenal', '£4.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:44:01.208376 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3038', "Henderson, J", 'Liverpool', '£4.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:44:03.649620 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4028', "Crouch, P", 'Stoke City', '£4.4m', 'Striker')
+						 
+D, [2015-07-27T09:44:06.192875 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4083', "Kone, A", 'Everton', '£4.4m', 'Striker')
+						 [0m
+D, [2015-07-27T09:44:08.745130 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2015', "Clichy, G", 'Manchester City', '£4.3m', 'Defender')
+						 
+D, [2015-07-27T09:44:10.829338 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2038', "Smalling, C", 'Manchester United', '£4.3m', 'Defender')
+						 [0m
+D, [2015-07-27T09:44:13.101565 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3050', "Lallana, A", 'Liverpool', '£4.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:44:15.444800 #11664] DEBUG -- :   [1m[36m (15.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3244', "Matic, N", 'Chelsea', '£4.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:44:17.667022 #11664] DEBUG -- :   [1m[35m (37.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4021', "Fletcher, S", 'Sunderland', '£4.3m', 'Striker')
+						 
+D, [2015-07-27T09:44:20.137269 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4036', "Joselu", 'Stoke City', '£4.3m', 'Striker')
+						 [0m
+D, [2015-07-27T09:44:22.114467 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4044', "Naismith, S", 'Everton', '£4.3m', 'Striker')
+						 
+D, [2015-07-27T09:44:25.814837 #11664] DEBUG -- :   [1m[36m (51.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4170', "Kramaric, A", 'Leicester City', '£4.3m', 'Striker')
+						 [0m
+D, [2015-07-27T09:44:28.091064 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2037', "Skrtel, M", 'Liverpool', '£4.2m', 'Defender')
+						 
+D, [2015-07-27T09:44:30.733328 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3042', "Schneiderlin, M", 'Manchester United', '£4.2m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:44:33.070562 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4046', "Murray, G", 'Crystal Palace', '£4.2m', 'Striker')
+						 
+D, [2015-07-27T09:44:35.374792 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4139', "Perez, A", 'Newcastle United', '£4.2m', 'Striker')
+						 [0m
+D, [2015-07-27T09:44:37.564011 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4153', "Ideye, B", 'West Bromwich Albion', '£4.2m', 'Striker')
+						 
+D, [2015-07-27T09:44:39.812236 #11664] DEBUG -- :   [1m[36m (13.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2010', "Vertonghen, J", 'Tottenham Hotspur', '£4.1m', 'Defender')
+						 [0m
+D, [2015-07-27T09:44:42.294484 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2030', "Gibbs, K", 'Arsenal', '£4.1m', 'Defender')
+						 
+D, [2015-07-27T09:44:45.030758 #11664] DEBUG -- :   [1m[36m (26.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2162', "Coleman, S", 'Everton', '£4.1m', 'Defender')
+						 [0m
+D, [2015-07-27T09:44:47.540009 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3237', "McCarthy, J", 'Everton', '£4.1m', 'Midfielder')
+						 
+D, [2015-07-27T09:44:50.001255 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3335', "Cuadrado, J", 'Chelsea', '£4.1m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:44:52.176472 #11664] DEBUG -- :   [1m[35m (31.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4031', "Anichebe, V", 'West Bromwich Albion', '£4.1m', 'Striker')
+						 
+D, [2015-07-27T09:44:54.484703 #11664] DEBUG -- :   [1m[36m (34.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4041', "Jerome, C", 'Norwich City', '£4.1m', 'Striker')
+						 [0m
+D, [2015-07-27T09:44:56.696924 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4177', "Okazaki, S", 'Leicester City', '£4.1m', 'Striker')
+						 
+D, [2015-07-27T09:44:58.907145 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1059', "Courtois, T", 'Chelsea', '£4.0m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:45:01.157370 #11664] DEBUG -- :   [1m[35m (32.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2001', "Kompany, V", 'Manchester City', '£4.0m', 'Defender')
+						 
+D, [2015-07-27T09:45:03.760631 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2055', "Clyne, N", 'Liverpool', '£4.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:45:06.067861 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2075', "Debuchy, M", 'Arsenal', '£4.0m', 'Defender')
+						 
+D, [2015-07-27T09:45:08.391094 #11664] DEBUG -- :   [1m[36m (12.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2226', "Zouma, K", 'Chelsea', '£4.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:45:10.552310 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3013', "Navas, J", 'Manchester City', '£4.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:45:12.758530 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3028', "Valencia, A", 'Manchester United', '£4.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:45:15.463801 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3032', "Milner, J", 'Liverpool', '£4.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:45:17.667021 #11664] DEBUG -- :   [1m[36m (28.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3214', "Chadli, N", 'Tottenham Hotspur', '£4.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:45:19.830238 #11664] DEBUG -- :   [1m[35m (12.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4006', "Wilson, C", 'Bournemouth', '£4.0m', 'Striker')
+						 
+D, [2015-07-27T09:45:22.256480 #11664] DEBUG -- :   [1m[36m (46.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4009', "Hooper, G", 'Norwich City', '£4.0m', 'Striker')
+						 [0m
+D, [2015-07-27T09:45:24.539708 #11664] DEBUG -- :   [1m[35m (33.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4051', "Wickham, C", 'Sunderland', '£4.0m', 'Striker')
+						 
+D, [2015-07-27T09:45:26.768931 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4052', "Chamakh, M", 'Crystal Palace', '£4.0m', 'Striker')
+						 [0m
+D, [2015-07-27T09:45:29.568211 #11664] DEBUG -- :   [1m[35m (27.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4081', "Gayle, D", 'Crystal Palace', '£4.0m', 'Striker')
+						 
+D, [2015-07-27T09:45:31.804435 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4117', "Emnes, M", 'Swansea City', '£4.0m', 'Striker')
+						 [0m
+D, [2015-07-27T09:45:33.997654 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4133', "Vardy, J", 'Leicester City', '£4.0m', 'Striker')
+						 
+D, [2015-07-27T09:45:36.391894 #11664] DEBUG -- :   [1m[36m (39.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4152', "Riviere, E", 'Newcastle United', '£4.0m', 'Striker')
+						 [0m
+D, [2015-07-27T09:45:38.795134 #11664] DEBUG -- :   [1m[35m (31.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2023', "Jagielka, P", 'Everton', '£3.9m', 'Defender')
+						 
+D, [2015-07-27T09:45:41.512406 #11664] DEBUG -- :   [1m[36m (38.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2031', "Kolarov, A", 'Manchester City', '£3.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:45:43.887643 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2067', "Shaw, L", 'Manchester United', '£3.9m', 'Defender')
+						 
+D, [2015-07-27T09:45:46.638918 #11664] DEBUG -- :   [1m[36m (38.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2175', "Sakho, M", 'Liverpool', '£3.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:45:48.825137 #11664] DEBUG -- :   [1m[35m (39.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2264', "Bellerin, H", 'Arsenal', '£3.9m', 'Defender')
+						 
+D, [2015-07-27T09:45:51.126367 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2274', "Alderweireld, T", 'Tottenham Hotspur', '£3.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:45:53.245579 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2279', "Darmian, M", 'Manchester United', '£3.9m', 'Defender')
+						 
+D, [2015-07-27T09:45:55.344789 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3040', "Young, A", 'Manchester United', '£3.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:45:57.689023 #11664] DEBUG -- :   [1m[35m (15.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3081', "Ox-Chamberlain, A", 'Arsenal', '£3.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:46:00.253279 #11664] DEBUG -- :   [1m[36m (30.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3149', "Barkley, R", 'Everton', '£3.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:46:03.364591 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3191', "Mirallas, K", 'Everton', '£3.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:46:05.838838 #11664] DEBUG -- :   [1m[36m (30.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3347', "Wijnaldum, G", 'Newcastle United', '£3.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:46:08.458100 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4011', "Deeney, T", 'Watford', '£3.9m', 'Striker')
+						 
+D, [2015-07-27T09:46:10.849339 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4060', "Campbell, F", 'Crystal Palace', '£3.9m', 'Striker')
+						 [0m
+D, [2015-07-27T09:46:13.195574 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1001', "Hart, J", 'Manchester City', '£3.8m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:46:15.629817 #11664] DEBUG -- :   [1m[36m (41.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1002', "de Gea, D", 'Manchester United', '£3.8m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:46:17.782032 #11664] DEBUG -- :   [1m[35m (53.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2017', "Monreal, N", 'Arsenal', '£3.8m', 'Defender')
+						 
+D, [2015-07-27T09:46:20.134267 #11664] DEBUG -- :   [1m[36m (11.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2024', "Sagna, B", 'Manchester City', '£3.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:46:22.307485 #11664] DEBUG -- :   [1m[35m (25.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2249', "Mangala, E", 'Manchester City', '£3.8m', 'Defender')
+						 
+D, [2015-07-27T09:46:24.493703 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2256', "Rojo, M", 'Manchester United', '£3.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:46:26.796934 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3011', "Carrick, M", 'Manchester United', '£3.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:46:28.985152 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3062', "Sigurdsson, G", 'Swansea City', '£3.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:46:31.218376 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3295', "Can, E", 'Liverpool', '£3.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:46:33.779632 #11664] DEBUG -- :   [1m[36m (36.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3344', "Blind, D", 'Manchester United', '£3.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:46:35.993853 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4013', "Lafferty, K", 'Norwich City', '£3.8m', 'Striker')
+						 
+D, [2015-07-27T09:46:38.679122 #11664] DEBUG -- :   [1m[36m (29.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4014', "Ighalo, O", 'Watford', '£3.8m', 'Striker')
+						 [0m
+D, [2015-07-27T09:46:41.152369 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4029', "Bamford, P", 'Crystal Palace', '£3.8m', 'Striker')
+						 
+D, [2015-07-27T09:46:43.671621 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4048', "Odemwingie, P", 'Stoke City', '£3.8m', 'Striker')
+						 [0m
+D, [2015-07-27T09:46:45.898844 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4131', "Nugent, D", 'Leicester City', '£3.8m', 'Striker')
+						 
+D, [2015-07-27T09:46:48.332087 #11664] DEBUG -- :   [1m[36m (8.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4136', "Campbell, J", 'Arsenal', '£3.8m', 'Striker')
+						 [0m
+D, [2015-07-27T09:46:50.523306 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1003', "Cech, P", 'Arsenal', '£3.7m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:46:52.748528 #11664] DEBUG -- :   [1m[36m (15.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2018', "Jones, P", 'Manchester United', '£3.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:46:55.497803 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2173', "Demichelis, M", 'Manchester City', '£3.7m', 'Defender')
+						 
+D, [2015-07-27T09:46:57.649018 #11664] DEBUG -- :   [1m[36m (12.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2254', "Moreno, A", 'Liverpool', '£3.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:46:59.971251 #11664] DEBUG -- :   [1m[35m (39.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2268', "Gabriel", 'Arsenal', '£3.7m', 'Defender')
+						 
+D, [2015-07-27T09:47:02.886542 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3020', "Ramires", 'Chelsea', '£3.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:47:05.144768 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3078', "Puncheon, J", 'Crystal Palace', '£3.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:47:07.298983 #11664] DEBUG -- :   [1m[36m (9.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3122', "Delph, F", 'Manchester City', '£3.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:47:09.497203 #11664] DEBUG -- :   [1m[35m (34.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3223', "Januzaj, A", 'Manchester United', '£3.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:47:11.783432 #11664] DEBUG -- :   [1m[36m (68.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3229', "Lamela, E", 'Tottenham Hotspur', '£3.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:47:14.245678 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3302', "Tadic, D", 'Southampton', '£3.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:47:16.447898 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4022', "Kermorgant, Y", 'Bournemouth', '£3.7m', 'Striker')
+						 [0m
+D, [2015-07-27T09:47:18.683122 #11664] DEBUG -- :   [1m[35m (34.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4032', "Graham, D", 'Sunderland', '£3.7m', 'Striker')
+						 
+D, [2015-07-27T09:47:21.606414 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4033', "Vydra, M", 'Watford', '£3.7m', 'Striker')
+						 [0m
+D, [2015-07-27T09:47:23.908644 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4035', "Juanmi", 'Southampton', '£3.7m', 'Striker')
+						 
+D, [2015-07-27T09:47:26.776931 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4038', "van Wolfswinkel, R", 'Norwich City', '£3.7m', 'Striker')
+						 [0m
+D, [2015-07-27T09:47:29.029156 #11664] DEBUG -- :   [1m[35m (44.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4100', "Kozak, L", 'Aston Villa', '£3.7m', 'Striker')
+						 
+D, [2015-07-27T09:47:31.381391 #11664] DEBUG -- :   [1m[36m (26.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1004', "Lloris, H", 'Tottenham Hotspur', '£3.6m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:47:33.636617 #11664] DEBUG -- :   [1m[35m (47.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1014', "Mignolet, S", 'Liverpool', '£3.6m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:47:36.397893 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2012', "Evans, J", 'Manchester United', '£3.6m', 'Defender')
+						 [0m
+D, [2015-07-27T09:47:38.635117 #11664] DEBUG -- :   [1m[35m (31.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2097', "Bertrand, R", 'Southampton', '£3.6m', 'Defender')
+						 
+D, [2015-07-27T09:47:40.966350 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3053', "Sissoko, M", 'Newcastle United', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:47:43.308584 #11664] DEBUG -- :   [1m[35m (27.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3072', "Allen, J", 'Liverpool', '£3.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:47:45.535807 #11664] DEBUG -- :   [1m[36m (44.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3079', "Rosicky, T", 'Arsenal', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:47:47.872040 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3108', "Ayew, A", 'Swansea City', '£3.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:47:50.001253 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3125', "Shelvey, J", 'Swansea City', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:47:52.281481 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3128', "Townsend, A", 'Tottenham Hotspur', '£3.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:47:55.079761 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3142', "Bolasie, Y", 'Crystal Palace', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:47:57.182769 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3151', "Coquelin, F", 'Arsenal', '£3.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:47:59.851769 #11664] DEBUG -- :   [1m[36m (9.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3206', "Wanyama, V", 'Southampton', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:02.561769 #11664] DEBUG -- :   [1m[35m (32.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3299', "Fernando", 'Manchester City', '£3.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:05.144769 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3305', "Markovic, L", 'Liverpool', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:07.586769 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3326', "Mane, S", 'Southampton', '£3.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:10.089769 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3342', "Deulofeu, G", 'Everton', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:12.636769 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3343', "Payet, D", 'West Ham United', '£3.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:15.133769 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3345', "Cabaye, Y", 'Crystal Palace', '£3.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:17.781769 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4037', "Grabban, L", 'Norwich City', '£3.6m', 'Striker')
+						 
+D, [2015-07-27T09:48:20.738769 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4039', "Zarate, M", 'West Ham United', '£3.6m', 'Striker')
+						 [0m
+D, [2015-07-27T09:48:23.290769 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4123', "Wilson, J", 'Manchester United', '£3.6m', 'Striker')
+						 
+D, [2015-07-27T09:48:25.893769 #11664] DEBUG -- :   [1m[36m (15.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2144', "Stones, J", 'Everton', '£3.5m', 'Defender')
+						 [0m
+D, [2015-07-27T09:48:28.551769 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3010', "Johnson, B", 'Norwich City', '£3.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:31.123769 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3012', "Anya, I", 'Watford', '£3.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:34.001769 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3021', "Johnson, A", 'Sunderland', '£3.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:36.660769 #11664] DEBUG -- :   [1m[36m (14.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3041', "Dyer, N", 'Swansea City', '£3.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:39.244769 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3054', "Brunt, C", 'West Bromwich Albion', '£3.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:42.024769 #11664] DEBUG -- :   [1m[36m (15.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3055', "Cleverley, T", 'Everton', '£3.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:44.555769 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3069', "Noble, M", 'West Ham United', '£3.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:47.023769 #11664] DEBUG -- :   [1m[36m (33.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3086', "Adam, C", 'Stoke City', '£3.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:49.671769 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3087', "Colback, J", 'Newcastle United', '£3.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:52.171769 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3156', "Ward-Prowse, J", 'Southampton', '£3.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:48:54.822769 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3313', "Grealish, J", 'Aston Villa', '£3.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:48:57.366769 #11664] DEBUG -- :   [1m[36m (35.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3322', "McArthur, J", 'Crystal Palace', '£3.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:00.259769 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3348', "Gueye, I", 'Aston Villa', '£3.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:02.830769 #11664] DEBUG -- :   [1m[36m (28.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4178', "Eder", 'Swansea City', '£3.5m', 'Striker')
+						 [0m
+D, [2015-07-27T09:49:05.822769 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1006', "Szczesny, W", 'Arsenal', '£3.4m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:49:08.399769 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1011', "Vorm, M", 'Tottenham Hotspur', '£3.4m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:49:10.891769 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1066', "Ospina, D", 'Arsenal', '£3.4m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:49:13.772769 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1071', "Valdes, V", 'Manchester United', '£3.4m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:49:16.042769 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2013', "Rafael", 'Manchester United', '£3.4m', 'Defender')
+						 
+D, [2015-07-27T09:49:18.349769 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2036', "Shawcross, R", 'Stoke City', '£3.4m', 'Defender')
+						 [0m
+D, [2015-07-27T09:49:20.578769 #11664] DEBUG -- :   [1m[35m (40.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3015', "Arteta, M", 'Arsenal', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:22.827769 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3023', "Osman, L", 'Everton', '£3.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:25.296769 #11664] DEBUG -- :   [1m[35m (34.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3024', "Hoolahan, W", 'Norwich City', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:27.634769 #11664] DEBUG -- :   [1m[36m (29.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3027', "Morrison, J", 'West Bromwich Albion', '£3.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:29.889769 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3063', "Westwood, A", 'Aston Villa', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:32.414769 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3095', "Jedinak, M", 'Crystal Palace', '£3.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:34.739769 #11664] DEBUG -- :   [1m[35m (12.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3137', "Rodwell, J", 'Sunderland', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:37.150769 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3211', "Ibe, J", 'Liverpool', '£3.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:39.443769 #11664] DEBUG -- :   [1m[35m (53.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3233', "Arnautovic, M", 'Stoke City', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:41.787769 #11664] DEBUG -- :   [1m[36m (37.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3287', "Mahrez, R", 'Leicester City', '£3.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:44.391769 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3297', "Mason, R", 'Tottenham Hotspur', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:46.793769 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3304', "Cabella, R", 'Newcastle United', '£3.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:49.042769 #11664] DEBUG -- :   [1m[35m (25.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3349', "McManaman, C", 'West Bromwich Albion', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:51.332769 #11664] DEBUG -- :   [1m[36m (35.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3353', "Lens, J", 'Sunderland', '£3.4m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:49:53.762769 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3354', "Clasie, J", 'Southampton', '£3.4m', 'Midfielder')
+						 
+D, [2015-07-27T09:49:56.105769 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1007', "Howard, T", 'Everton', '£3.3m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:49:58.407769 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2089', "Fonte, J", 'Southampton', '£3.3m', 'Defender')
+						 
+D, [2015-07-27T09:50:00.687769 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2156', "Lovren, D", 'Liverpool', '£3.3m', 'Defender')
+						 [0m
+D, [2015-07-27T09:50:03.207769 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2209', "Trippier, K", 'Tottenham Hotspur', '£3.3m', 'Defender')
+						 
+D, [2015-07-27T09:50:05.801769 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2236', "Cresswell, A", 'West Ham United', '£3.3m', 'Defender')
+						 [0m
+D, [2015-07-27T09:50:08.398769 #11664] DEBUG -- :   [1m[35m (15.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2257', "Fazio, F", 'Tottenham Hotspur', '£3.3m', 'Defender')
+						 
+D, [2015-07-27T09:50:10.817769 #11664] DEBUG -- :   [1m[36m (28.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2280', "Ogbonna, A", 'West Ham United', '£3.3m', 'Defender')
+						 [0m
+D, [2015-07-27T09:50:13.205769 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3043', "Barry, G", 'Everton', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:15.796769 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3064', "Davis, S", 'Southampton', '£3.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:50:18.167769 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3068', "Moses, V", 'Chelsea', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:20.580769 #11664] DEBUG -- :   [1m[36m (9.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3085', "Zaha, W", 'Crystal Palace', '£3.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:50:23.277769 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3101', "Sung-Yueng, K", 'Swansea City', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:25.669769 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3109', "Fletcher, D", 'West Bromwich Albion', '£3.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:50:28.377769 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3116', "Sinclair, S", 'Aston Villa', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:31.159769 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3121', "Anita, V", 'Newcastle United', '£3.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:50:33.527769 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3219', "Lingard, J", 'Manchester United', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:35.718769 #11664] DEBUG -- :   [1m[36m (10.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3296', "Gomez, J", 'Sunderland', '£3.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:50:38.356769 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3301', "de Jong, S", 'Newcastle United', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:40.764769 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3325', "Amalfitano, M", 'West Ham United', '£3.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:50:43.197769 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3332', "Gil, C", 'Aston Villa', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:45.803769 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3339', "Mulumbu, Y", 'Norwich City', '£3.3m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:50:48.133769 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3346', "van Ginkel, M", 'Stoke City', '£3.3m', 'Midfielder')
+						 
+D, [2015-07-27T09:50:50.567769 #11664] DEBUG -- :   [1m[36m (39.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4164', "Barrow, M", 'Swansea City', '£3.3m', 'Striker')
+						 [0m
+D, [2015-07-27T09:50:53.288769 #11664] DEBUG -- :   [1m[35m (15.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1008', "Begovic, A", 'Chelsea', '£3.2m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:50:55.572769 #11664] DEBUG -- :   [1m[36m (33.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1039', "Fabianski, L", 'Swansea City', '£3.2m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:50:58.082769 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1065', "Caballero, W", 'Manchester City', '£3.2m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:51:00.323769 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1067', "Forster, F", 'Southampton', '£3.2m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:51:03.093769 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2026', "Enrique, J", 'Liverpool', '£3.2m', 'Defender')
+						 
+D, [2015-07-27T09:51:05.540769 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2041', "Williams, A", 'Swansea City', '£3.2m', 'Defender')
+						 [0m
+D, [2015-07-27T09:51:08.192769 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2193', "Dann, S", 'Crystal Palace', '£3.2m', 'Defender')
+						 
+D, [2015-07-27T09:51:10.637769 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2195', "Chambers, C", 'Arsenal', '£3.2m', 'Defender')
+						 [0m
+D, [2015-07-27T09:51:13.054769 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2240', "Luis, F", 'Chelsea', '£3.2m', 'Defender')
+						 
+D, [2015-07-27T09:51:15.472769 #11664] DEBUG -- :   [1m[36m (34.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2244', "Dier, E", 'Tottenham Hotspur', '£3.2m', 'Defender')
+						 [0m
+D, [2015-07-27T09:51:17.838769 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3014', "Pienaar, S", 'Everton', '£3.2m', 'Midfielder')
+						 
+D, [2015-07-27T09:51:20.314769 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3025', "King, J", 'Bournemouth', '£3.2m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:51:22.624769 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3033', "Sessegnon, S", 'West Bromwich Albion', '£3.2m', 'Midfielder')
+						 
+D, [2015-07-27T09:51:24.873769 #11664] DEBUG -- :   [1m[36m (9.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3037', "Gardner, C", 'West Bromwich Albion', '£3.2m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:51:27.170769 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3060', "Leiva, L", 'Liverpool', '£3.2m', 'Midfielder')
+						 
+D, [2015-07-27T09:51:29.785769 #11664] DEBUG -- :   [1m[36m (10.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3088', "Gibson, D", 'Everton', '£3.2m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:51:32.509769 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3217', "Larsson, S", 'Sunderland', '£3.2m', 'Midfielder')
+						 
+D, [2015-07-27T09:51:35.054769 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3228', "Flamini, M", 'Arsenal', '£3.2m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:51:37.398769 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3340', "McClean, J", 'West Bromwich Albion', '£3.2m', 'Midfielder')
+						 
+D, [2015-07-27T09:51:39.678769 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4043', "Forestieri, F", 'Watford', '£3.2m', 'Striker')
+						 [0m
+D, [2015-07-27T09:51:41.909769 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1012', "Foster, B", 'West Bromwich Albion', '£3.1m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:51:44.267769 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1046', "Butland, J", 'Stoke City', '£3.1m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:51:46.654769 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2021', "Soares, C", 'Southampton', '£3.1m', 'Defender')
+						 
+D, [2015-07-27T09:51:49.041769 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2028', "Lescott, J", 'West Bromwich Albion', '£3.1m', 'Defender')
+						 [0m
+D, [2015-07-27T09:51:51.453769 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2049', "Richards, M", 'Aston Villa', '£3.1m', 'Defender')
+						 
+D, [2015-07-27T09:51:54.045769 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2058', "Reid, W", 'West Ham United', '£3.1m', 'Defender')
+						 [0m
+D, [2015-07-27T09:51:56.860769 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2064', "Davies, B", 'Tottenham Hotspur', '£3.1m', 'Defender')
+						 
+D, [2015-07-27T09:51:59.150769 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2086', "Taylor, N", 'Swansea City', '£3.1m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:01.509769 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2151', "Rose, D", 'Tottenham Hotspur', '£3.1m', 'Defender')
+						 
+D, [2015-07-27T09:52:03.708769 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2159', "Pieters, E", 'Stoke City', '£3.1m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:06.467769 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2172', "Chiriches, V", 'Tottenham Hotspur', '£3.1m', 'Defender')
+						 
+D, [2015-07-27T09:52:08.780769 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2278', "Johnson, G", 'Stoke City', '£3.1m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:11.034769 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3030', "Redmond, N", 'Norwich City', '£3.1m', 'Midfielder')
+						 
+D, [2015-07-27T09:52:13.427769 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3092', "Cork, J", 'Swansea City', '£3.1m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:52:16.666769 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3240', "Bentaleb, N", 'Tottenham Hotspur', '£3.1m', 'Midfielder')
+						 
+D, [2015-07-27T09:52:19.058769 #11664] DEBUG -- :   [1m[36m (39.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3298', "Kouyate, C", 'West Ham United', '£3.1m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:52:21.318769 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1013', "Krul, T", 'Newcastle United', '£3.0m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:52:23.586769 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1072', "Stekelenburg, M", 'Southampton', '£3.0m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:52:26.627769 #11664] DEBUG -- :   [1m[35m (14.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2002', "Bassong, S", 'Norwich City', '£3.0m', 'Defender')
+						 
+D, [2015-07-27T09:52:28.892769 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2020', "Walker, K", 'Tottenham Hotspur', '£3.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:31.627769 #11664] DEBUG -- :   [1m[35m (9.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2032', "Toure, K", 'Liverpool', '£3.0m', 'Defender')
+						 
+D, [2015-07-27T09:52:34.500769 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2043', "Jenkinson, C", 'West Ham United', '£3.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:37.098769 #11664] DEBUG -- :   [1m[35m (35.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2046', "Collins, J", 'West Ham United', '£3.0m', 'Defender')
+						 
+D, [2015-07-27T09:52:39.679769 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2069', "Naughton, K", 'Swansea City', '£3.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:42.061769 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2077', "Clark, C", 'Aston Villa', '£3.0m', 'Defender')
+						 
+D, [2015-07-27T09:52:44.338769 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2078', "Coloccini, F", 'Newcastle United', '£3.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:46.812769 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2092', "Bardsley, P", 'Stoke City', '£3.0m', 'Defender')
+						 
+D, [2015-07-27T09:52:49.574769 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2093', "Brown, W", 'Sunderland', '£3.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:52.148769 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2171', "Cissokho, A", 'Aston Villa', '£3.0m', 'Defender')
+						 
+D, [2015-07-27T09:52:54.572769 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2239', "Janmaat, D", 'Newcastle United', '£3.0m', 'Defender')
+						 [0m
+D, [2015-07-27T09:52:56.816936 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3022', "Nolan, K", 'West Ham United', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:52:59.232178 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3029', "Routledge, W", 'Swansea City', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:01.971452 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3036', "Watson, B", 'Watford', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:04.267681 #11664] DEBUG -- :   [1m[36m (12.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3044', "Gosling, D", 'Bournemouth', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:06.525907 #11664] DEBUG -- :   [1m[35m (25.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3046', "Howson, J", 'Norwich City', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:08.794134 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3048', "Stanislas, J", 'Bournemouth', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:11.099364 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3059', "Jarvis, M", 'West Ham United', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:13.479602 #11664] DEBUG -- :   [1m[36m (29.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3074', "Gouffran, Y", 'Newcastle United', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:15.665821 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3075', "Dorrans, G", 'Norwich City', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:18.214076 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3077', "N'Zogbia, C", 'Aston Villa', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:20.591314 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3106', "Cattermole, L", 'Sunderland', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:22.818536 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3115', "Tiote, C", 'Newcastle United', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:25.701825 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3119', "Yacob, C", 'West Bromwich Albion', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:28.038058 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3133', "Albrighton, M", 'Leicester City', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:30.326287 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3157', "Oviedo, B", 'Everton', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:32.631517 #11664] DEBUG -- :   [1m[36m (27.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3162', "Ireland, S", 'Stoke City', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:34.987753 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3173', "Gnabry, S", 'Arsenal', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:37.285983 #11664] DEBUG -- :   [1m[36m (33.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3192', "Bacuna, L", 'Aston Villa', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:39.525207 #11664] DEBUG -- :   [1m[35m (12.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3209', "Giaccherini, E", 'Sunderland', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:41.937448 #11664] DEBUG -- :   [1m[36m (28.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3221', "Capoue, E", 'Watford', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:44.325687 #11664] DEBUG -- :   [1m[35m (44.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3243', "McGeady, A", 'Everton', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:46.916946 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3254', "Ledley, J", 'Crystal Palace', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:49.230177 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3290', "Atsu, C", 'Bournemouth', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:52.037458 #11664] DEBUG -- :   [1m[36m (11.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3306', "Montero, J", 'Swansea City', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:54.541708 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3308', "Aarons, R", 'Newcastle United', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:53:56.923946 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3312', "Sanchez, C", 'Aston Villa', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:53:59.440198 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3352', "El Ouriachi, M", 'Stoke City', '£3.0m', 'Midfielder')
+						 
+D, [2015-07-27T09:54:01.902444 #11664] DEBUG -- :   [1m[36m (26.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3358', "Lanzini, M", 'West Ham United', '£3.0m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:54:04.691723 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4174', "Akpom, C", 'Arsenal', '£3.0m', 'Striker')
+						 
+D, [2015-07-27T09:54:07.025957 #11664] DEBUG -- :   [1m[36m (28.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4181', "Iheanacho, K", 'Manchester City', '£3.0m', 'Striker')
+						 [0m
+D, [2015-07-27T09:54:09.261180 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1021', "Pantilimon, C", 'Sunderland', '£2.9m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:54:11.685422 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1027', "Adrian", 'West Ham United', '£2.9m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:54:14.257680 #11664] DEBUG -- :   [1m[35m (9.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1028', "Given, S", 'Stoke City', '£2.9m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:54:16.628917 #11664] DEBUG -- :   [1m[36m (10.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2005', "Olsson, M", 'Norwich City', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:18.827137 #11664] DEBUG -- :   [1m[35m (27.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2042', "Rangel, A", 'Swansea City', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:21.105364 #11664] DEBUG -- :   [1m[36m (33.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2047', "Huth, R", 'Leicester City', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:23.500604 #11664] DEBUG -- :   [1m[35m (31.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2048', "O'Shea, J", 'Sunderland', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:25.849839 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2065', "Cameron, G", 'Stoke City', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:28.075061 #11664] DEBUG -- :   [1m[35m (12.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2071', "Yoshida, M", 'Southampton', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:30.474301 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2081', "Olsson, J", 'West Bromwich Albion', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:32.914545 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2082', "Tomkins, J", 'West Ham United', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:35.158770 #11664] DEBUG -- :   [1m[36m (34.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2084', "Wilson, M", 'Stoke City', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:38.000054 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2096', "Tiendalli, D", 'Swansea City', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:40.245278 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2112', "Kelly, M", 'Crystal Palace', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:42.920546 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2114', "Taylor, S", 'Newcastle United', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:45.236777 #11664] DEBUG -- :   [1m[36m (27.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2122', "Ward, J", 'Crystal Palace', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:47.515005 #11664] DEBUG -- :   [1m[35m (37.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2182', "Flanagan, J", 'Liverpool', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:49.975251 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2225', "van Aanholt, P", 'Sunderland', '£2.9m', 'Defender')
+						 [0m
+D, [2015-07-27T09:54:52.637517 #11664] DEBUG -- :   [1m[35m (40.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2277', "Matthews, A", 'Sunderland', '£2.9m', 'Defender')
+						 
+D, [2015-07-27T09:54:55.144768 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3026', "Lennon, A", 'Tottenham Hotspur', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:54:57.938047 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3045', "Dembele, M", 'Tottenham Hotspur', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:00.434297 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3049', "Surman, A", 'Bournemouth', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:02.888542 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3051', "Tettey, A", 'Norwich City', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:05.134767 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3052', "Obiang, P", 'West Ham United', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:07.656019 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3056', "O'Neil, G", 'Norwich City', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:10.159269 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3057', "Ritchie, M", 'Bournemouth', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:12.437497 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3058', "Ramirez, G", 'Southampton', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:14.896743 #11664] DEBUG -- :   [1m[36m (11.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3071', "Whelan, G", 'Stoke City', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:17.271980 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3090', "Britton, L", 'Swansea City', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:19.681221 #11664] DEBUG -- :   [1m[36m (9.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3107', "Cole, J", 'Aston Villa', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:22.098463 #11664] DEBUG -- :   [1m[35m (33.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3112', "Mikel, J", 'Chelsea', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:24.442697 #11664] DEBUG -- :   [1m[36m (33.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3183', "Mutch, J", 'Crystal Palace', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:27.179971 #11664] DEBUG -- :   [1m[35m (56.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3250', "Bridcutt, L", 'Sunderland', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:29.552208 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3284', "James, M", 'Leicester City', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:31.939447 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3285', "King, A", 'Leicester City', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:34.191672 #11664] DEBUG -- :   [1m[36m (41.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3307', "Besic, M", 'Everton', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:36.595913 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3311', "Buckley, W", 'Sunderland', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:38.924145 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3351', "Behrami, V", 'Watford', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:41.604413 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3356', "Teixeira, J", 'Liverpool', '£2.9m', 'Midfielder')
+						 
+D, [2015-07-27T09:55:44.063659 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3359', "Jurado, J", 'Watford', '£2.9m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:55:46.445898 #11664] DEBUG -- :   [1m[35m (40.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4107', "Gallagher, S", 'Southampton', '£2.9m', 'Striker')
+						 
+D, [2015-07-27T09:55:48.835136 #11664] DEBUG -- :   [1m[36m (38.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4168', "Armstrong, A", 'Newcastle United', '£2.9m', 'Striker')
+						 [0m
+D, [2015-07-27T09:55:51.178371 #11664] DEBUG -- :   [1m[35m (33.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1023', "Speroni, J", 'Crystal Palace', '£2.8m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:55:53.748628 #11664] DEBUG -- :   [1m[36m (33.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2007', "Gomez, J", 'Liverpool', '£2.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:55:56.221875 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2008', "Wimmer, K", 'Tottenham Hotspur', '£2.8m', 'Defender')
+						 
+D, [2015-07-27T09:55:58.538107 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2009', "Tabanou, F", 'Swansea City', '£2.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:56:01.240377 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2014', "Fuchs, C", 'Leicester City', '£2.8m', 'Defender')
+						 
+D, [2015-07-27T09:56:03.659619 #11664] DEBUG -- :   [1m[36m (37.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2060', "McAuley, G", 'West Bromwich Albion', '£2.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:56:05.899843 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2098', "Jones, B", 'Sunderland', '£2.8m', 'Defender')
+						 
+D, [2015-07-27T09:56:08.229076 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2108', "Delaney, D", 'Crystal Palace', '£2.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:56:10.571310 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2153', "Okore, J", 'Aston Villa', '£2.8m', 'Defender')
+						 
+D, [2015-07-27T09:56:12.849538 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2255', "Fernandez, F", 'Swansea City', '£2.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:56:15.521805 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2275', "Holebas, J", 'Watford', '£2.8m', 'Defender')
+						 
+D, [2015-07-27T09:56:18.359089 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2276', "Martina, C", 'Southampton', '£2.8m', 'Defender')
+						 [0m
+D, [2015-07-27T09:56:21.128365 #11664] DEBUG -- :   [1m[35m (32.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2281', "Nyom, A", 'Watford', '£2.8m', 'Defender')
+						 
+D, [2015-07-27T09:56:23.469600 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3065', "Arter, H", 'Bournemouth', '£2.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:56:25.914844 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3066', "Bennett, E", 'Norwich City', '£2.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:56:28.216074 #11664] DEBUG -- :   [1m[36m (31.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3067', "Murray, S", 'Watford', '£2.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:56:30.501303 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3136', "Obertan, G", 'Newcastle United', '£2.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:56:32.865539 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3177', "Gardner, G", 'Aston Villa', '£2.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:56:35.102763 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3238', "Guedioura, A", 'Crystal Palace', '£2.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:56:37.426995 #11664] DEBUG -- :   [1m[36m (42.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3259', "Isgrove, L", 'Southampton', '£2.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:56:40.081261 #11664] DEBUG -- :   [1m[35m (40.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3282', "Drinkwater, D", 'Leicester City', '£2.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:56:42.460498 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3303', "Poyet, D", 'West Ham United', '£2.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:56:44.767729 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3330', "Grimes, M", 'Swansea City', '£2.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:56:47.214974 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3338', "Loftus-Cheek, R", 'Chelsea', '£2.8m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:56:49.625215 #11664] DEBUG -- :   [1m[35m (27.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3355', "Roberts, P", 'Manchester City', '£2.8m', 'Midfielder')
+						 
+D, [2015-07-27T09:56:52.287481 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4045', "Rantie, T", 'Bournemouth', '£2.8m', 'Striker')
+						 [0m
+D, [2015-07-27T09:56:54.647717 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4176', "Sinclair, J", 'Liverpool', '£2.8m', 'Striker')
+						 
+D, [2015-07-27T09:56:56.937946 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1005', "Ruddy, J", 'Norwich City', '£2.7m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:56:59.310183 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1056', "Schmeichel, K", 'Leicester City', '£2.7m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:57:01.529405 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2016', "Turner, M", 'Norwich City', '£2.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:57:04.474700 #11664] DEBUG -- :   [1m[35m (33.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2029', "Prodl, S", 'Watford', '£2.7m', 'Defender')
+						 
+D, [2015-07-27T09:57:06.856938 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2033', "Pudil, D", 'Watford', '£2.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:57:09.601212 #11664] DEBUG -- :   [1m[35m (13.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2034', "Hendrie, S", 'West Ham United', '£2.7m', 'Defender')
+						 
+D, [2015-07-27T09:57:11.968449 #11664] DEBUG -- :   [1m[36m (14.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2035', "Whittaker, S", 'Norwich City', '£2.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:57:14.316684 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2040', "O'Brien, J", 'West Ham United', '£2.7m', 'Defender')
+						 
+D, [2015-07-27T09:57:16.701922 #11664] DEBUG -- :   [1m[36m (21.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2143', "Hutton, A", 'Aston Villa', '£2.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:57:19.101162 #11664] DEBUG -- :   [1m[35m (32.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2219', "Schlupp, J", 'Leicester City', '£2.7m', 'Defender')
+						 
+D, [2015-07-27T09:57:21.555408 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2220', "Morgan, W", 'Leicester City', '£2.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:57:23.946647 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2252', "Gardos, F", 'Southampton', '£2.7m', 'Defender')
+						 
+D, [2015-07-27T09:57:26.282880 #11664] DEBUG -- :   [1m[36m (36.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2262', "McNair, P", 'Manchester United', '£2.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:57:28.594111 #11664] DEBUG -- :   [1m[35m (13.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2263', "Reveillere, A", 'Sunderland', '£2.7m', 'Defender')
+						 
+D, [2015-07-27T09:57:30.959348 #11664] DEBUG -- :   [1m[36m (13.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2283', "Amavi, J", 'Aston Villa', '£2.7m', 'Defender')
+						 [0m
+D, [2015-07-27T09:57:33.647617 #11664] DEBUG -- :   [1m[35m (37.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3070', "Sidwell, S", 'Stoke City', '£2.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:57:36.020854 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3076', "Alli, D", 'Tottenham Hotspur', '£2.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:57:38.222074 #11664] DEBUG -- :   [1m[35m (31.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3080', "Fabbrini, D", 'Watford', '£2.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:57:40.614313 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3082', "MacDonald, S", 'Bournemouth', '£2.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:57:43.337586 #11664] DEBUG -- :   [1m[35m (26.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3091', "Marveaux, S", 'Newcastle United', '£2.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:57:45.780830 #11664] DEBUG -- :   [1m[36m (39.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3104', "Bannan, B", 'Crystal Palace', '£2.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:57:48.106062 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3168', "Powell, N", 'Manchester United', '£2.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:57:50.401292 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3184', "Williams, Jon", 'Crystal Palace', '£2.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:57:52.763528 #11664] DEBUG -- :   [1m[35m (14.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3187', "Vuckic, H", 'Newcastle United', '£2.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:57:55.329785 #11664] DEBUG -- :   [1m[36m (40.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3283', "Hammond, D", 'Leicester City', '£2.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:57:57.662018 #11664] DEBUG -- :   [1m[35m (12.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3357', "Pritchard, A", 'Tottenham Hotspur', '£2.7m', 'Midfielder')
+						 
+D, [2015-07-27T09:58:00.016253 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3360', "Reine-Adelaide, J", 'Arsenal', '£2.7m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:58:02.440496 #11664] DEBUG -- :   [1m[35m (30.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4057', "Mayuka, E", 'Southampton', '£2.7m', 'Striker')
+						 
+D, [2015-07-27T09:58:04.774729 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1020', "Lindegaard, A", 'Manchester United', '£2.6m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:58:07.595011 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2039', "Elphick, T", 'Bournemouth', '£2.6m', 'Defender')
+						 
+D, [2015-07-27T09:58:09.913243 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2095', "Senderos, P", 'Aston Villa', '£2.6m', 'Defender')
+						 [0m
+D, [2015-07-27T09:58:12.290481 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2125', "Williamson, M", 'Newcastle United', '£2.6m', 'Defender')
+						 
+D, [2015-07-27T09:58:14.656717 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2139', "Dawson, C", 'West Bromwich Albion', '£2.6m', 'Defender')
+						 [0m
+D, [2015-07-27T09:58:16.910943 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2161', "Muniesa, M", 'Stoke City', '£2.6m', 'Defender')
+						 
+D, [2015-07-27T09:58:19.347186 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2179', "Mariappa, A", 'Crystal Palace', '£2.6m', 'Defender')
+						 [0m
+D, [2015-07-27T09:58:21.706422 #11664] DEBUG -- :   [1m[35m (36.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2216', "Wasilewski, M", 'Leicester City', '£2.6m', 'Defender')
+						 
+D, [2015-07-27T09:58:24.062658 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2237', "Pocognoli, S", 'West Bromwich Albion', '£2.6m', 'Defender')
+						 [0m
+D, [2015-07-27T09:58:26.417893 #11664] DEBUG -- :   [1m[35m (30.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2238', "Richardson, K", 'Aston Villa', '£2.6m', 'Defender')
+						 
+D, [2015-07-27T09:58:28.656117 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2266', "Wollscheid, P", 'Stoke City', '£2.6m', 'Defender')
+						 [0m
+D, [2015-07-27T09:58:31.135365 #11664] DEBUG -- :   [1m[35m (34.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2284', "Britos, M", 'Watford', '£2.6m', 'Defender')
+						 
+D, [2015-07-27T09:58:33.450596 #11664] DEBUG -- :   [1m[36m (36.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3089', "Andreu, T", 'Norwich City', '£2.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:58:35.864838 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3226', "Mavrias, C", 'Sunderland', '£2.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:58:38.332084 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3261', "Reed, H", 'Southampton', '£2.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:58:40.833335 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3333', "Fulton, J", 'Swansea City', '£2.6m', 'Midfielder')
+						 
+D, [2015-07-27T09:58:43.093561 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3334', "Bielik, K", 'Arsenal', '£2.6m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:58:45.612812 #11664] DEBUG -- :   [1m[35m (16.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4050', "Appiah, K", 'Crystal Palace', '£2.6m', 'Striker')
+						 
+D, [2015-07-27T09:58:47.875039 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1017', "Guzan, B", 'Aston Villa', '£2.5m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:58:50.289280 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2044', "Paredes, JC", 'Watford', '£2.5m', 'Defender')
+						 
+D, [2015-07-27T09:58:52.777529 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2045', "Galloway, B", 'Everton', '£2.5m', 'Defender')
+						 [0m
+D, [2015-07-27T09:58:55.641815 #11664] DEBUG -- :   [1m[35m (43.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2111', "Kaboul, Y", 'Sunderland', '£2.5m', 'Defender')
+						 
+D, [2015-07-27T09:58:57.858037 #11664] DEBUG -- :   [1m[36m (10.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2160', "Amat, J", 'Swansea City', '£2.5m', 'Defender')
+						 [0m
+D, [2015-07-27T09:59:00.233274 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2181', "Dummett, P", 'Newcastle United', '£2.5m', 'Defender')
+						 
+D, [2015-07-27T09:59:02.553506 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2223', "Simpson, D", 'Leicester City', '£2.5m', 'Defender')
+						 [0m
+D, [2015-07-27T09:59:04.931744 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2269', "Souare, P", 'Crystal Palace', '£2.5m', 'Defender')
+						 
+D, [2015-07-27T09:59:07.545005 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2271', "Mings, T", 'Bournemouth', '£2.5m', 'Defender')
+						 [0m
+D, [2015-07-27T09:59:09.886240 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2272', "Distin, S", 'Bournemouth', '£2.5m', 'Defender')
+						 
+D, [2015-07-27T09:59:12.178469 #11664] DEBUG -- :   [1m[36m (35.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3094', "Tozser, D", 'Watford', '£2.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:59:14.670718 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3096', "Pugh, M", 'Bournemouth', '£2.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:59:17.010952 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3097', "Byers, G", 'Watford', '£2.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:59:19.263177 #11664] DEBUG -- :   [1m[35m (30.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3098', "Daniels, C", 'Bournemouth', '£2.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:59:21.669418 #11664] DEBUG -- :   [1m[36m (29.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3099', "Odijidja-Ofoe, V", 'Norwich City', '£2.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:59:24.479699 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3100', "Smith, C", 'Watford', '£2.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:59:26.776928 #11664] DEBUG -- :   [1m[36m (29.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3102', "O'Kane, E", 'Bournemouth', '£2.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:59:29.305181 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3103', "Kaikai, S", 'Crystal Palace', '£2.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:59:31.573408 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3105', "Abdi, A", 'Watford', '£2.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:59:33.912642 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3193', "Tonev, A", 'Aston Villa', '£2.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:59:36.310882 #11664] DEBUG -- :   [1m[36m (29.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3327', "Abeid, M", 'Newcastle United', '£2.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:59:39.037154 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3328', "Hesketh, J", 'Southampton', '£2.5m', 'Midfielder')
+						 
+D, [2015-07-27T09:59:41.325383 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('3337', "Chung-yong, L", 'Crystal Palace', '£2.5m', 'Midfielder')
+						 [0m
+D, [2015-07-27T09:59:43.674618 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4104', "Lee, E", 'West Ham United', '£2.5m', 'Striker')
+						 
+D, [2015-07-27T09:59:46.056856 #11664] DEBUG -- :   [1m[36m (42.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4124', "Lawrence, T", 'Leicester City', '£2.5m', 'Striker')
+						 [0m
+D, [2015-07-27T09:59:48.393090 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1009', "Bogdan, A", 'Liverpool', '£2.4m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:59:50.765327 #11664] DEBUG -- :   [1m[36m (38.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1015', "Boruc, A", 'Bournemouth', '£2.4m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:59:53.105561 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1069', "Martinez, E", 'Arsenal', '£2.4m', 'Goalkeeper')
+						 
+D, [2015-07-27T09:59:55.675818 #11664] DEBUG -- :   [1m[36m (12.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1075', "McCarthy, A", 'Crystal Palace', '£2.4m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T09:59:58.081059 #11664] DEBUG -- :   [1m[35m (20.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2050', "Lascelles, J", 'Newcastle United', '£2.4m', 'Defender')
+						 
+D, [2015-07-27T10:00:00.398290 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2052', "Layun, M", 'Watford', '£2.4m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:03.090559 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2054', "Martin, R", 'Norwich City', '£2.4m', 'Defender')
+						 
+D, [2015-07-27T10:00:05.459796 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2056', "Angella, G", 'Watford', '£2.4m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:08.225073 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2091', "Baker, N", 'Aston Villa', '£2.4m', 'Defender')
+						 
+D, [2015-07-27T10:00:10.453296 #11664] DEBUG -- :   [1m[36m (11.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2100', "Coates, S", 'Sunderland', '£2.4m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:13.257576 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2109', "Haidara, M", 'Newcastle United', '£2.4m', 'Defender')
+						 
+D, [2015-07-27T10:00:15.655816 #11664] DEBUG -- :   [1m[36m (48.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2196', "Ake, N", 'Chelsea', '£2.4m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:17.943045 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2221', "Konchesky, P", 'Leicester City', '£2.4m', 'Defender')
+						 
+D, [2015-07-27T10:00:20.390289 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2250', "Blackett, T", 'Manchester United', '£2.4m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:22.822532 #11664] DEBUG -- :   [1m[35m (27.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1010', "Gomes, H", 'Watford', '£2.3m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:00:25.126763 #11664] DEBUG -- :   [1m[36m (30.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1037', "Robles, J", 'Everton', '£2.3m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:00:27.578008 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2057', "Ward, E", 'Bournemouth', '£2.3m', 'Defender')
+						 
+D, [2015-07-27T10:00:29.992249 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2059', "Cathcart, C", 'Watford', '£2.3m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:32.471497 #11664] DEBUG -- :   [1m[35m (28.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2063', "Miquel, I", 'Norwich City', '£2.3m', 'Defender')
+						 
+D, [2015-07-27T10:00:34.914742 #11664] DEBUG -- :   [1m[36m (26.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2088', "Wisdom, A", 'Liverpool', '£2.3m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:37.221972 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2222', "de Laet, R", 'Leicester City', '£2.3m', 'Defender')
+						 
+D, [2015-07-27T10:00:39.554205 #11664] DEBUG -- :   [1m[36m (20.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2261', "Browning, T", 'Everton', '£2.3m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:42.239474 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2267', "Yedlin, D", 'Tottenham Hotspur', '£2.3m', 'Defender')
+						 
+D, [2015-07-27T10:00:44.615712 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2270', "Burke, R", 'West Ham United', '£2.3m', 'Defender')
+						 [0m
+D, [2015-07-27T10:00:47.089959 #11664] DEBUG -- :   [1m[35m (29.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2282', "Hangeland, B", 'Crystal Palace', '£2.3m', 'Defender')
+						 
+D, [2015-07-27T10:00:49.645214 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4054', "Jakubiak, A", 'Watford', '£2.3m', 'Striker')
+						 [0m
+D, [2015-07-27T10:00:52.430493 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4137', "McAleny, C", 'Everton', '£2.3m', 'Striker')
+						 
+D, [2015-07-27T10:00:54.909741 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1016', "Federici, A", 'Bournemouth', '£2.2m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:00:57.212971 #11664] DEBUG -- :   [1m[35m (25.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1036', "Schwarzer, M", 'Leicester City', '£2.2m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:00:59.533203 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1050', "Hennessey, W", 'Crystal Palace', '£2.2m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:01:02.524502 #11664] DEBUG -- :   [1m[35m (23.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1073', "Nordfeldt, K", 'Swansea City', '£2.2m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:01:04.992749 #11664] DEBUG -- :   [1m[36m (39.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2061', "Francis, S", 'Bournemouth', '£2.2m', 'Defender')
+						 [0m
+D, [2015-07-27T10:01:07.522002 #11664] DEBUG -- :   [1m[35m (27.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2062', "Smith, A", 'Bournemouth', '£2.2m', 'Defender')
+						 
+D, [2015-07-27T10:01:10.203270 #11664] DEBUG -- :   [1m[36m (45.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2066', "Doherty, J", 'Watford', '£2.2m', 'Defender')
+						 [0m
+D, [2015-07-27T10:01:12.698520 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2110', "Bennett, J", 'Aston Villa', '£2.2m', 'Defender')
+						 
+D, [2015-07-27T10:01:15.539804 #11664] DEBUG -- :   [1m[36m (25.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2123', "Hibbert, T", 'Everton', '£2.2m', 'Defender')
+						 [0m
+D, [2015-07-27T10:01:18.392089 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2176', "Ilori, T", 'Liverpool', '£2.2m', 'Defender')
+						 
+D, [2015-07-27T10:01:20.985348 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2185', "Fryers, Z", 'Crystal Palace', '£2.2m', 'Defender')
+						 [0m
+D, [2015-07-27T10:01:23.676617 #11664] DEBUG -- :   [1m[35m (12.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2218', "Moore, L", 'Leicester City', '£2.2m', 'Defender')
+						 
+D, [2015-07-27T10:01:26.835933 #11664] DEBUG -- :   [1m[36m (43.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4055', "Mensah, B", 'Watford', '£2.2m', 'Striker')
+						 [0m
+D, [2015-07-27T10:01:29.625212 #11664] DEBUG -- :   [1m[35m (13.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1018', "Mannone, V", 'Sunderland', '£2.1m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:01:32.174467 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1019', "Darlow, K", 'Newcastle United', '£2.1m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:01:35.335783 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1033', "Davis, K", 'Southampton', '£2.1m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:01:38.127062 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1074', "Bunn, M", 'Aston Villa', '£2.1m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:01:40.928342 #11664] DEBUG -- :   [1m[35m (10.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2068', "Cargill, B", 'Bournemouth', '£2.1m', 'Defender')
+						 
+D, [2015-07-27T10:01:43.395589 #11664] DEBUG -- :   [1m[36m (18.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2070', "Bennett, R", 'Norwich City', '£2.1m', 'Defender')
+						 [0m
+D, [2015-07-27T10:01:46.503900 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2072', "Doyley, L", 'Watford', '£2.1m', 'Defender')
+						 
+D, [2015-07-27T10:01:48.717121 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2145', "Good, C", 'Newcastle United', '£2.1m', 'Defender')
+						 [0m
+D, [2015-07-27T10:01:51.181367 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2157', "Roberge, V", 'Sunderland', '£2.1m', 'Defender')
+						 
+D, [2015-07-27T10:01:54.058655 #11664] DEBUG -- :   [1m[36m (23.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2233', "O'Neil, L", 'West Bromwich Albion', '£2.1m', 'Defender')
+						 [0m
+D, [2015-07-27T10:01:56.884938 #11664] DEBUG -- :   [1m[35m (24.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('4056', "Murphy, J", 'Norwich City', '£2.1m', 'Striker')
+						 
+D, [2015-07-27T10:01:59.614211 #11664] DEBUG -- :   [1m[36m (19.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1022', "Randolph, D", 'West Ham United', '£2.0m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:02:02.421491 #11664] DEBUG -- :   [1m[35m (17.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1034', "Myhill, B", 'West Bromwich Albion', '£2.0m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:02:05.050754 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2073', "Cook, S", 'Bournemouth', '£2.0m', 'Defender')
+						 [0m
+D, [2015-07-27T10:02:07.669016 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2074', "McCarthy, J", 'Southampton', '£2.0m', 'Defender')
+						 
+D, [2015-07-27T10:02:10.341283 #11664] DEBUG -- :   [1m[36m (33.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2076', "Ekstrand, J", 'Watford', '£2.0m', 'Defender')
+						 [0m
+D, [2015-07-27T10:02:13.107560 #11664] DEBUG -- :   [1m[35m (13.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2079', "Hoban, T", 'Watford', '£2.0m', 'Defender')
+						 
+D, [2015-07-27T10:02:15.942843 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2166', "McCarthy, P", 'Crystal Palace', '£2.0m', 'Defender')
+						 [0m
+D, [2015-07-27T10:02:18.537103 #11664] DEBUG -- :   [1m[35m (22.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2190', "Bartley, K", 'Swansea City', '£2.0m', 'Defender')
+						 
+D, [2015-07-27T10:02:21.169366 #11664] DEBUG -- :   [1m[36m (16.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2230', "Teixeira, D", 'Stoke City', '£2.0m', 'Defender')
+						 [0m
+D, [2015-07-27T10:02:23.693618 #11664] DEBUG -- :   [1m[35m (19.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2243', "Targett, M", 'Southampton', '£2.0m', 'Defender')
+						 
+D, [2015-07-27T10:02:26.083857 #11664] DEBUG -- :   [1m[36m (22.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2246', "Gamboa, C", 'West Bromwich Albion', '£2.0m', 'Defender')
+						 [0m
+D, [2015-07-27T10:02:28.812130 #11664] DEBUG -- :   [1m[35m (40.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('2265', "Henry, D", 'West Ham United', '£2.0m', 'Defender')
+						 
+D, [2015-07-27T10:02:31.205369 #11664] DEBUG -- :   [1m[36m (32.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1024', "Rudd, D", 'Norwich City', '£1.9m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:02:33.853634 #11664] DEBUG -- :   [1m[35m (18.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1049', "Steer, J", 'Aston Villa', '£1.9m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:02:36.061855 #11664] DEBUG -- :   [1m[36m (9.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1045', "Gazzaniga, P", 'Southampton', '£1.8m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:02:38.470096 #11664] DEBUG -- :   [1m[35m (21.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1047', "Wright, R", 'Manchester City', '£1.8m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:02:41.320381 #11664] DEBUG -- :   [1m[36m (24.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1025', "Arlauskis, G", 'Watford', '£1.7m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:02:43.704619 #11664] DEBUG -- :   [1m[35m (37.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1026', "Elliot, R", 'Newcastle United', '£1.7m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:02:46.427892 #11664] DEBUG -- :   [1m[36m (14.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1029', "Haugaard, J", 'Stoke City', '£1.7m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:02:48.804129 #11664] DEBUG -- :   [1m[35m (25.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1030', "Camp, L", 'Bournemouth', '£1.7m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:02:50.985347 #11664] DEBUG -- :   [1m[36m (28.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1060', "Kettings, C", 'Crystal Palace', '£1.7m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:02:53.371586 #11664] DEBUG -- :   [1m[35m (11.0ms)[0m  
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1031', "Gilmartin, R", 'Watford', '£1.6m', 'Goalkeeper')
+						 
+D, [2015-07-27T10:02:55.532802 #11664] DEBUG -- :   [1m[36m (17.0ms)[0m  [1m
+								INSERT or IGNORE into players
+								(code, name, team, value, position)
+								VALUES ('1032', "Spiegel, R", 'West Ham United', '£1.6m', 'Goalkeeper')
+						 [0m
+D, [2015-07-27T10:02:59.558204 #11664] DEBUG -- :   [1m[35mFooty::Player Load (7.0ms)[0m  SELECT "players".* FROM "players" ORDER BY "players"."position" ASC, "players"."value" DESC
+D, [2015-07-27T10:06:04.150285 #11664] DEBUG -- :   [1m[36mFooty::Player Load (8.0ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY "players"."position" ASC, "players"."value" DESC[0m
+D, [2015-07-27T10:08:20.638648 #11664] DEBUG -- :   [1m[35mFooty::Player Load (6.0ms)[0m  SELECT "players".* FROM "players" ORDER BY "players"."position" ASC, "players"."value" DESC
+D, [2015-07-27T10:12:36.715783 #11664] DEBUG -- :   [1m[36mFooty::Player Load (5.0ms)[0m  [1mSELECT "players".* FROM "players" ORDER BY "players"."position" ASC, "players"."value" DESC[0m

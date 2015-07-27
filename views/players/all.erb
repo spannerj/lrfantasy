@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<div class="col-md-2"></div>
+  	<div class="col-md-8">
+		<table class="table table-striped" align="center">
+			<tr>
+			  	<td><b>ID</b></td>
+		        <td><b>Code</b></td>
+				<td><b>Name</b></td>
+				<td><b>Team</b></td>
+				<td><b>Position</b></td>
+		        <td><b>Value</b></td>
+			</tr>
+		    <%
+		       @players.each_with_index  do | player, index |
+			%>
+			<tr>
+			  	<td><%= index+1 %></td>
+		        <td><%= player.code %></td>
+		        <td><%= player.name %></td>
+				<td><%= player.team %></td>
+		        <td><%= player.position %></td>
+		        <td><%= player.value %></td>
+			</tr>
+			<%
+			end
+			%> 
+		</table> 
+	</div>
+	<div class="col-md-2"></div>
+  </body>
+</html>
