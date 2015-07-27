@@ -2,6 +2,7 @@ require 'active_record'
 require 'rubygems'
 require 'sinatra'
 require 'capybara'
+require './environments'
 
 require_relative 'helpers/helpers'
 
