@@ -7,6 +7,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.9.9, jruby-1.7.18-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.5.6, jruby-1.7.18-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.8, jruby-1.7.18-p551) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="phantomjs (v1.9.8.0, jruby-1.7.18-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-protection (v1.5.3, jruby-1.7.18-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.1.7, jruby-1.7.18-p551) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v1.4.6, jruby-1.7.18-p551) [gem]" level="application" />

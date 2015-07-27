@@ -23,10 +23,10 @@ class Footy < Sinatra::Base
 	#ActiveRecord::Base.logger = Logger.new(File.open('database.log', 'w'))
 	ActiveRecord::Base.logger = Logger.new(STDOUT)
 
-	ActiveRecord::Base.establish_connection(
-	  :adapter  => 'sqlite3',
-	  :database => 'db/development.sqlite3'
-	)
+	# ActiveRecord::Base.establish_connection(
+	#   :adapter  => 'sqlite3',
+	#   :database => 'db/development.sqlite3'
+	# )
 
 	class Player < ActiveRecord::Base
 	end
