@@ -1,7 +1,6 @@
 require 'active_record'
 require 'rubygems'
 require 'sinatra'
-require 'haml'
 require 'capybara'
 
 require_relative 'helpers/helpers'
