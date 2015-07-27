@@ -1,5 +1,4 @@
 require 'watir-webdriver'
-require 'headless'
 
 # Sinatra module
 module Sinatra
@@ -11,10 +10,8 @@ module Sinatra
 	end
 
   	def insert_player
-  		headless = Headless.new
-		headless.start
-  		b = Watir::Browser.new 
-  		#b = Watir::Browser.new :phantomjs
+  		#b = Watir::Browser.new
+  		b = Watir::Browser.new :phantomjs
   		b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
   		table_array = b.table(:class => "data sortable").links.to_a
   		links_array = []
@@ -85,7 +82,6 @@ module Sinatra
 			end
 		end
 		b.close
-		headless.destroy
   	end
   end	
 end
