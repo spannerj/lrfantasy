@@ -5,6 +5,12 @@ module Sinatra
   # Helpers for Sinatra
   module Helpers
 
+	class Player < ActiveRecord::Base
+	end
+
+	class Score < ActiveRecord::Base
+	end
+
 	def logger
 		request.logger
 	end

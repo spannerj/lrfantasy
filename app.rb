@@ -31,11 +31,7 @@ class Footy < Sinatra::Base
 	#   :database => 'db/development.sqlite3'
 	# )
 
-	class Player < ActiveRecord::Base
-	end
 
-	class Score < ActiveRecord::Base
-	end
 
 	get '/' do
 	 erb :index
