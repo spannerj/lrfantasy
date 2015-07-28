@@ -35,7 +35,7 @@ module Sinatra
 			sql = %{
 								INSERT into players
 								(code, name, team, value, position)
-								VALUES ('#{code}', "#{name}", '#{team}', '#{value}', '#{position}')
+								VALUES ('#{code}', '#{name}', '#{team}', '#{value}', '#{position}')
 						 }
 			ActiveRecord::Base.connection.execute(sql)
 
