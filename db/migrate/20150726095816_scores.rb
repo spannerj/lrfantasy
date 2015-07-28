@@ -13,7 +13,7 @@ class Scores < ActiveRecord::Migration
 		t.string :missed_penalties
 		t.string :saved_penalties
 		t.string :own_goal
-		t.string :conceeded
+		t.string :conceded
 		t.string :clean_sheet_full
 		t.string :clean_sheet_part
 		t.string :points
