@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7625b952-8be9-46f5-972d-407e1e416b69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.rb" afterPath="$PROJECT_DIR$/app.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers/helpers.rb" afterPath="$PROJECT_DIR$/helpers/helpers.rb" />
     </list>
     <ignored path="footylite.iws" />
@@ -40,8 +39,8 @@
       <file leaf-file-name="helpers.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helpers/helpers.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26953566" vertical-offset="0" max-vertical-offset="1734">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.7123443" vertical-offset="204" max-vertical-offset="1734">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -655,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helpers/helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26953566" vertical-offset="0" max-vertical-offset="1734">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.7123443" vertical-offset="204" max-vertical-offset="1734">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding />
         </state>
       </provider>

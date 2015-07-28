@@ -47,7 +47,7 @@ module Sinatra
 			# ActiveRecord::Base.connection.execute(sql)
 
 			score = Score.new
-			score.code = code
+			score.code = player.code
 			#extract points info
 			b.table(:class, "data sortable").tbody.rows.each do |row|
 				row.cells.each_with_index do |cell, index|
