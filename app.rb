@@ -1,10 +1,13 @@
 require 'active_record'
-require 'rubygems'
 require 'sinatra'
-require 'capybara'
+require 'sinatra/activerecord'
 require './config/environments'
 
 require_relative 'helpers/helpers'
+
+helpers do
+	include Rack::Utils
+end
 
 # require 'phantomjs'
 # Capybara.register_driver :poltergeist do |app|
@@ -29,6 +32,9 @@ class Footy < Sinatra::Base
 	# )
 
 	class Player < ActiveRecord::Base
+	end
+
+	class Score < ActiveRecord::Base
 	end
 
 	get '/' do

@@ -12,7 +12,8 @@ config_dir = File.expand_path('../config', __FILE__)
  
 DatabaseTasks.env = ENV['DEPLOY_ENVIRONMENT'] || 'development'
 DatabaseTasks.db_dir = db_dir
-DatabaseTasks.database_configuration = YAML.load(File.read(File.join(config_dir, 'database.yml')))
+#DatabaseTasks.database_configuration = YAML.load(File.read(File.join(config_dir, 'database.yml')))
+DatabaseTasks.database_configuration = YAML.load(ERB.new(File.read(File.join("config","database.yml"))).result)
 DatabaseTasks.migrations_paths = File.join(db_dir, 'migrate')
  
 task :environment do
