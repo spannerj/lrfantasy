@@ -33,7 +33,7 @@ module Sinatra
 			position = b.p(:id => 'stats-position').text
 
 			sql = %{
-								INSERT or IGNORE into players
+								INSERT into players
 								(code, name, team, value, position)
 								VALUES ('#{code}', "#{name}", '#{team}', '#{value}', '#{position}')
 						 }
@@ -69,7 +69,7 @@ module Sinatra
 				end
 
 			  	sql = %{
-							INSERT or IGNORE into scores
+							INSERT into scores
 							(code,week,opposition,goals,key_contribution,started_game,substitute_appearance,
 						     yellow_card,red_card,missed_penalties,saved_penalties,own_goal,conceeded,
 						     clean_sheet_full,clean_sheet_part,points)
