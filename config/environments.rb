@@ -1,10 +1,21 @@
 configure :development do
-	set :database, 'sqlite://database.db'
-	set :show_exceptions, true
+  # set :database, 'sqlite://database.db'
+  # set :show_exceptions, true
+  #
+  # ActiveRecord::Base.establish_connection(
+  #   :adapter  => 'sqlite3',
+  #   :database => 'db/development.sqlite3'
+  # )
+
+  db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost:5432/')
 
   ActiveRecord::Base.establish_connection(
-    :adapter  => 'sqlite3',
-    :database => 'db/development.sqlite3'
+      :adapter  => 'postgresql',
+      :host     => '127.0.0.1',
+      :username => 'postgres',
+      :password => 'password',
+      :database => 'fantasyfooty',
+      :encoding => 'utf8'
   )
 end	
 

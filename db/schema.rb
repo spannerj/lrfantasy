@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150726095816) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "players", force: true do |t|
     t.string "code"
     t.string "name"
@@ -21,7 +24,7 @@ ActiveRecord::Schema.define(version: 20150726095816) do
     t.string "position"
   end
 
-  add_index "players", ["code"], name: "index_players_on_code", unique: true
+  add_index "players", ["code"], name: "index_players_on_code", unique: true, using: :btree
 
   create_table "scores", force: true do |t|
     t.string "code"
@@ -36,12 +39,12 @@ ActiveRecord::Schema.define(version: 20150726095816) do
     t.string "missed_penalties"
     t.string "saved_penalties"
     t.string "own_goal"
-    t.string "conceeded"
+    t.string "conceded"
     t.string "clean_sheet_full"
     t.string "clean_sheet_part"
     t.string "points"
   end
 
-  add_index "scores", ["code"], name: "index_scores_on_code"
+  add_index "scores", ["code"], name: "index_scores_on_code", using: :btree
 
 end

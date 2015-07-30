@@ -2,6 +2,8 @@ require 'active_record'
 require 'sinatra'
 require 'sinatra/activerecord'
 require './config/environments'
+require 'sinatra/flash'
+require 'sinatra/redirect_with_flash'
 
 require_relative 'helpers/helpers'
 
@@ -9,62 +11,53 @@ helpers do
 	include Rack::Utils
 end
 
-# require 'phantomjs'
-# Capybara.register_driver :poltergeist do |app|
-#     Capybara::Poltergeist::Driver.new(app, :phantomjs => Phantomjs.path)
-# end
-
-#use Rack::Logger
-
 class Footy < Sinatra::Base
-
 	set :bind, '0.0.0.0'
 
 	#register helpers for use
 	helpers Sinatra::Helpers
 
-	#ActiveRecord::Base.logger = Logger.new(File.open('database.log', 'w'))
 	ActiveRecord::Base.logger = Logger.new(STDOUT)
 
-	# ActiveRecord::Base.establish_connection(
-	#   :adapter  => 'sqlite3',
-	#   :database => 'db/development.sqlite3'
-	# )
+	enable :sessions
+	register Sinatra::Flash
 
-
+	before do
+		if session['total'].nil?
+			session['total'] = 0
+		end
+		if session['started'].nil?
+			session['started'] = false
+		end
+	end
 
 	get '/' do
-	 erb :index
+		@total = session['total']
+		@started = session['started']
+		#@players = Player.order('substr(code,1,1)', value: :desc)
+		@weeks = Score.maximum(:week)
+		@players = Player.find_by_sql('SELECT a.*, b.week, b.p
+																	FROM players as a left outer join (select code, sum(points) as p, week from scores group by code, week) as b on a.code = b.code
+																	group by a.id, b.p, b.week
+																	order by substr(a.code,1,1), value desc, week  asc')
+		erb :'players/all'
 	end
 
-	#Players
-	get '/players' do	
-	  @players = Player.order(:code, value: :desc)
-	  erb :'players/all'
+	get '/populatePlayers' do
+		Thread.new do
+			Player.delete_all
+		end
+
+		@started = true
+		session['started'] = @started
+		@total = get_player_count
+		session['total'] = @total
+
+		Thread.new do
+			insert_player
+		end
+		flash[:notice] = 'Scraping has started, you will see a progress bar soon. Get a coffee as it takes about 25 minutes!'
+	  redirect '/'
 	end
-
-	post '/populatePlayers' do
-	    insert_player
-	    redirect '/players'
-	end
-
-	# get '/player/new' do
-	#   @player = Player.new
-	#   haml :'players/new'
-	# end
-
-	# post '/players' do
-	#   @player = Player.new(params[:player])
-	#   if @player.save
-	#     redirect "/players/#{@player.id}"
-	#   else
-	#     "There was a problem saving that..."
-	#   end
-	# end
-
-	# get '/players/:id' do
-	#   @player = Player.find(params[:id])
-	#   haml :'players/show'
-	# end
 
 end	

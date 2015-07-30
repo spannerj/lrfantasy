@@ -23,3 +23,8 @@ task :environment do
 end
  
 load 'active_record/railties/databases.rake'
+
+desc "This task is called by the Heroku cron add-on"
+task :cron do
+  puts ('cron task run at ' + Time.now.to_s)
+end
