@@ -31,7 +31,7 @@ class Footy < Sinatra::Base
 		end
 	end
 	
-	get '/test'do
+	get '/test' do
 		@players = Player.find_by_sql("	SELECT code, array_agg(ROW(week, total)) AS week_array
 										FROM (select code, week, sum(points) as total
 										  from scores
@@ -41,7 +41,8 @@ class Footy < Sinatra::Base
 										GROUP BY code
 										ORDER BY code ")
 		p @players.week_array								
-		puts @players.week_array[0]								
+		puts @players.week_array[0]	
+		erb :'players/all'
 	end	
 
 	get '/' do
