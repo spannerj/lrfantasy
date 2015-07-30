@@ -30,16 +30,32 @@ class Footy < Sinatra::Base
 			session['started'] = false
 		end
 	end
+	
+	get '/test'do
+		@players = Player.find_by_sql("	SELECT code, array_agg(ROW(week, total)) AS week_array
+										FROM (select code, week, sum(points) as total
+										  from scores
+										  where code = '4001'
+										  group by code, week
+										  ORDER BY week) AS row
+										GROUP BY code
+										ORDER BY code ")
+		p @players.week_array								
+		puts @players.week_array[0]								
+	end	
 
 	get '/' do
 		@total = session['total']
 		@started = session['started']
 		#@players = Player.order('substr(code,1,1)', value: :desc)
 		@weeks = Score.maximum(:week)
-		@players = Player.find_by_sql('SELECT a.*, b.week, b.p
-																	FROM players as a left outer join (select code, sum(points) as p, week from scores group by code, week) as b on a.code = b.code
-																	group by a.id, b.p, b.week
-																	order by substr(a.code,1,1), value desc, week  asc')
+		@players = Player.find_by_sql('	SELECT code, array_agg(ROW(week, total)) AS week_array
+										FROM (select code, week, sum(points) as total
+										  from scores
+										  group by code, week
+										  ORDER BY week) AS row
+										GROUP BY code
+										ORDER BY code')
 		erb :'players/all'
 	end
 
