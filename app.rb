@@ -41,8 +41,6 @@ class Footy < Sinatra::Base
 										GROUP BY code
 										ORDER BY code ")
 
-		str = parser.parse_pg_array @players.week_array 
-		puts str
 		p @players.week_array								
 		puts @players.week_array[0]	
 		erb :'players/all'
