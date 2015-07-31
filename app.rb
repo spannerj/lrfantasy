@@ -11,10 +11,6 @@ helpers do
 	include Rack::Utils
 end
 
-class MyPostgresParser
-  include PgArrayParser
-end
-
 class Footy < Sinatra::Base
 	set :bind, '0.0.0.0'
 
@@ -44,7 +40,7 @@ class Footy < Sinatra::Base
 										  ORDER BY week) AS row
 										GROUP BY code
 										ORDER BY code ")
-		parser = MyPostgresParser.new
+
 		str = parser.parse_pg_array @players.week_array 
 		puts str
 		p @players.week_array								
