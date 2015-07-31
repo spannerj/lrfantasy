@@ -11,7 +11,7 @@ gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 gem 'activerecord-postgres-array'
 
-group :default, :development, :test do
+group :development, :test do
 	gem 'sqlite3'
 end
 
