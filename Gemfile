@@ -9,6 +9,7 @@ gem 'phantomjs', :require => 'phantomjs/poltergeist'
 gem 'poltergeist'
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
+gem 'pg_array_parser'
 
 group :development, :test do
 	gem 'sqlite3'
