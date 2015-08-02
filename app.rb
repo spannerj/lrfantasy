@@ -51,7 +51,7 @@ class Footy < Sinatra::Base
 		@started = session['started']
 		@players = Player.order('substr(code,1,1)', value: :desc)
 		@weeks = Score.maximum(:week)
-		@scores = Score.group(:week).order(:week).select('code, week, sum(points)') 
+		@scores = Score.group(:week :code).order(:week).select('code, week, sum(points) as total') 
 		p @weeks
 		p @scores
 		erb :'players/all'
