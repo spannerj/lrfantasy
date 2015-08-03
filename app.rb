@@ -62,8 +62,11 @@ class Footy < Sinatra::Base
 				p week
 				p '@scores'
 				p @scores
-				if @scores.has_key?("week")
-					puts 'i have found the score!'
+				@scores.each do | score |
+					if week['week'] == score['week']
+						puts 'i have found the score!'
+						puts score['total']
+					end	
 				end
 			end	
 		end
