@@ -49,11 +49,25 @@ class Footy < Sinatra::Base
 	get '/' do
 		@total = session['total']
 		@started = session['started']
+		
 		@players = Player.order('substr(code,1,1)', value: :desc)
-		@weeks = Score.maximum(:week)
+		@weeks = Score.distinct(:week)
 		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total') 
-		p @weeks
-		p @scores
+		
+		@players.each do |player|
+			puts '@weeks'
+			p @weeks
+			@weeks.each do |week|
+				p 'week'
+				p week
+				p '@scores'
+				p @scores
+				if @scores.has_key?("week")
+					puts 'i have found the score!'
+				end
+			end	
+		end
+
 		erb :'players/all'
 	end
 
