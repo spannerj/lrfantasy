@@ -54,14 +54,14 @@ class Footy < Sinatra::Base
 		@weeks = Score.distinct(:week)
 		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total') 
 		
+		p '@scores'
+		p @scores
+		puts '@weeks'
+		p @weeks
 		@players.each do |player|
-			puts '@weeks'
-			p @weeks
 			@weeks.each do |week|
 				p 'week'
 				p week
-				p '@scores'
-				p @scores
 				@scores.each do | score |
 					if week['week'] == score['week']
 						puts 'i have found the score!'
