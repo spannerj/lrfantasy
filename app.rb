@@ -51,7 +51,7 @@ class Footy < Sinatra::Base
 		@started = session['started']
 		
 		@players = Player.order('substr(code,1,1)', value: :desc)
-	    weeks = Score.distinct(:week).order(:week)
+	    weeks = Score.select(:week).distinct.order(:week)
 	    @weeks = []
 	    weeks.each do |week|
 	    	@weeks.push(week.week)	
