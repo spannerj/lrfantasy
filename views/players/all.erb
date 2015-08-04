@@ -95,10 +95,8 @@
 		        <td><%= player['value'] %></td>
 		        <%
 				@weeks.each do |week|
-					p week
 					@points = ''
 					player['scores'].each do |score|
-						p score
 						if week.week == score['week']
 							@points = score['total']
 						end
