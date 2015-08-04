@@ -94,24 +94,15 @@
 		        <td><%= player['position'] %></td>
 		        <td><%= player['value'] %></td>
 		        <%
-					@weeks.each do |week|
-						player['scores'].each do |score|
-							if week == score['week']
-			  	%>
-			  					<td><%= score['total'] %></td>	
-						<%
-							else
-						%> 
-								<td></td>
-						<%
-							end
-						%> 
-					<%
+				@weeks.each do |week|
+					points = ''
+					player['scores'].each do |score|
+						if week == score['week']
+							points = score['total']
 						end
-					%> 
-				<%
 					end
-				%> 
+				end
+			  	%>
 			</tr>
 			<%
 				end
