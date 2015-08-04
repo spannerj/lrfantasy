@@ -60,7 +60,7 @@ class Footy < Sinatra::Base
 		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total').as_json 
 		p @scores
 		@players.each do |player|
-			if player['code'] == '4001'
+			if player['code'] == '4003'
 				p player
 				@weeks.each do |week|
 					@scores.each do | score |
