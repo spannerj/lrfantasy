@@ -68,6 +68,7 @@ class Footy < Sinatra::Base
 					p player
 				end	
 				week_scores = []
+				p score
 				if (player['code'] == score['code'])
 					week_scores.push(score['total'])
 				end	
