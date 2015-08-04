@@ -63,11 +63,11 @@ class Footy < Sinatra::Base
 		
 		
 		@players.each do | player |
+			week_scores = []
 			@res.each do | score |
 				if player['code'] == '4003'
 					p player
 				end	
-				week_scores = []
 				p score
 				if (player['code'] == score['code'])
 					week_scores.push(score['total'])
