@@ -55,6 +55,7 @@ class Footy < Sinatra::Base
 	    @weeks = []
 	    weeks.each do |week|
 	    	@weeks.push(week.week)	
+	    	p @weeks
 	    end	
 		# @scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total') 
 

@@ -78,8 +78,9 @@
 		        <td><b>Value</b></td>
 			  <%
 				 for i in @weeks.to_i.downto(1)
+				 @weeks.each do |week|
 			  %>
-				<td><b><%= i.to_s %></b></td>
+				<td><b><%= week %></b></td>
 			  <%
 				 end
 			  %>
