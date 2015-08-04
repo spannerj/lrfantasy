@@ -77,7 +77,6 @@
 				<td><b>Position</b></td>
 		        <td><b>Value</b></td>
 			  <%
-				 #for i in @weeks.to_i.downto(1)
 				 @weeks.each do |week|
 			  %>
 				<td><b><%= week.week %></b></td>
@@ -94,6 +93,19 @@
 				<td><%= player['team'] %></td>
 		        <td><%= player['position'] %></td>
 		        <td><%= player['value'] %></td>
+		        <%
+					@weeks.each do |week|
+						player['scores'].each do |score|
+							if week == score['week']
+			  	%>
+			  					<td><%= score['total'] %></td>	
+						<%
+							else
+						%> 
+								<td></td>
+				<%
+					end
+				%> 
 			</tr>
 			<%
 				end

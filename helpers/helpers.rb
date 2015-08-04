@@ -3,18 +3,19 @@ require 'watir-webdriver'
 # Sinatra module
 module Sinatra
   # Helpers for Sinatra
-  module Helpers
+	module Helpers
 
-	class Player < ActiveRecord::Base
-	end
-
-	class Score < ActiveRecord::Base
-	end
-
-	def logger
-		request.logger
-	end
-	  def get_player_count
+		class Player < ActiveRecord::Base
+		end
+	
+		class Score < ActiveRecord::Base
+		end
+	
+		def logger
+			request.logger
+		end
+		
+		def get_player_count
 			b = Watir::Browser.new :phantomjs
 			begin
 				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
@@ -24,23 +25,24 @@ module Sinatra
 			end
 			row_count
 		end
-
-  	def insert_player
+	
+	  	def insert_player
 			b = Watir::Browser.new :phantomjs
 			begin
 				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				table_array = b.table(:class => "data sortable").links.to_a
 				links_array = []
 				table_array.each_with_index do |l, index|
-					if (index %2 == 0) then
-						links_array.push(l.href)
-					end
+					
+				if (index %2 == 0) then
+					links_array.push(l.href)
 				end
-
-				links_array.each_with_index do |link, index|
-
+			end
+	
+			links_array.each_with_index do |link, index|
+	
 				b.goto links_array[index]
-
+	
 				#store player id
 				player = Player.new
 				player.code = links_array[index][-4,4]
@@ -49,15 +51,16 @@ module Sinatra
 				player.value = b.p(:id => 'stats-value').text
 				player.position = b.p(:id => 'stats-position').text
 				player.save
-
+	
 				score = Score.new
 				score.code = player.code
-
+	
 				b.goto link
+					
 				#extract points info
 				b.table(:class, "data sortable").tbody.rows.each do |row|
-					row.cells.each_with_index do |cell, index|
-						case index
+					row.cells.each_with_index do |cell, i|
+						case i
 							when 0
 								score.week = cell.text
 							when 1
@@ -84,10 +87,10 @@ module Sinatra
 					end
 					score.save
 				end
-				end
+			end
 			ensure
 				b.close
 			end
 		end
-  end	
+  	end	
 end

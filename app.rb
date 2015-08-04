@@ -58,19 +58,18 @@ class Footy < Sinatra::Base
 	    # weeks.each do |week|
 	    # 	@weeks.push(week.week)	
 	    # end	
-		@res = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total').as_json 
-		p @res
-		
+		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total').as_json 
+		p @scores
 		
 		@players.each do | player |
 			week_scores = []
-			@res.each do | score |
+			@scores.each do | score |
 				if player['code'] == '4003'
 					p player
 				end	
 				p score
 				if (player['code'] == score['code'])
-					week_scores.push(score['total'])
+					week_scores.push(score)
 				end	
 			end
 			player['scores'] = week_scores
