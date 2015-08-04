@@ -51,8 +51,11 @@ class Footy < Sinatra::Base
 		@started = session['started']
 		
 		@players = Player.order('substr(code,1,1)', value: :desc)
-	    @weeks = Score.select('DISTINCT week')
-	    p @weeks
+	    weeks = Score.distinct(:week).order(:week)
+	    @weeks = []
+	    weeks.each do |week|
+	    	@weeks.push(week.week)	
+	    end	
 		# @scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total') 
 
 		# @players.each do |player|
