@@ -95,14 +95,17 @@
 		        <td><%= player['value'] %></td>
 		        <%
 				@weeks.each do |week|
+					p week
 					points = ''
 					player['scores'].each do |score|
+						p score
 						if week == score['week']
 							points = score['total']
 						end
 					end
 				end
 			  	%>
+			  	<td><%= points %></td>
 			</tr>
 			<%
 				end
