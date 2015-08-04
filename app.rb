@@ -50,7 +50,7 @@ class Footy < Sinatra::Base
 		@total = session['total']
 		@started = session['started']
 		
-		@players = Player.order('substr(code,1,1)', value: :desc).find('4003').as_json
+		@players = Player.order('substr(code,1,1)', value: :desc).where(code: '4003').as_json
 		p @players
 	    @weeks = Score.select(:week).distinct.order(:week)
 	    p @weeks
