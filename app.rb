@@ -54,16 +54,18 @@ class Footy < Sinatra::Base
 		@weeks = Score.distinct(:week)
 		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total') 
 		
-		puts @players['4001']
-		@players['4001'].each do |player|
-			@weeks.each do |week|
-				@scores.each do | score |
-					if (player['code'] == score['code'])
-						puts 'i have found the score!'
-						puts score['total']
-					end	
-				end
-			end	
+
+		@players.each do |player|
+			if player.code == '4001'
+				@weeks.each do |week|
+					@scores.each do | score |
+						if (player['code'] == score['code'])
+							puts 'i have found the score!'
+							puts score['total']
+						end	
+					end
+				end	
+			end
 		end
 
 		erb :'players/all'
