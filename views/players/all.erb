@@ -1,7 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <meta charset="utf-8">
 <html>
-	<%
+  <head>
+  		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<%
 	   cnt = @players.count
 
 	   @lock = 'disabled="disabled"'
@@ -29,13 +37,6 @@
 			session['started'] = false
 		end
 	%>
-
-  <head>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-  </head>
-  <body>
   	<div class="col-md-2"></div>
   	<div class="col-md-8">
 	    <br>
