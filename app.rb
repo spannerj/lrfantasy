@@ -1,7 +1,7 @@
 require 'active_record'
 require 'sinatra'
-require 'sinatra/activerecord'
 require './config/environments'
+require 'sinatra/activerecord'
 require 'sinatra/flash'
 require 'sinatra/redirect_with_flash'
 
@@ -30,21 +30,6 @@ class Footy < Sinatra::Base
 			session['started'] = false
 		end
 	end
-	
-	# get '/test' do
-	# 	@players = Player.find_by_sql("	SELECT code, array_agg(ROW(week, total)) AS week_array
-	# 									FROM (select code, week, sum(points) as total
-	# 									  from scores
-	# 									  where code = '4001'
-	# 									  group by code, week
-	# 									  ORDER BY week) AS row
-	# 									GROUP BY code
-	# 									ORDER BY code ")
-
-	# 	p @players.week_array								
-	# 	puts @players.week_array[0]	
-	# 	erb :'players/all'
-	# end	
 
 	get '/' do
 		@total = session['total']

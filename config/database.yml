@@ -7,7 +7,7 @@
 development:
   adapter: postgresql
   database: fantasyfooty
-  username: postgres
+  username: ubuntu
   password: password
   host: localhost
 

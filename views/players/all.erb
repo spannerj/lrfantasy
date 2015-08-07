@@ -71,11 +71,19 @@
 	    <br>
 		<table class="table table-striped" align="center">
 			<tr>
-		        <td><b>Code</b></td>
+		        <td><b>Key</b></td>
 				<td><b>Name</b></td>
-				<td><b>Team</b></td>
-				<td><b>Position</b></td>
-		        <td><b>Value</b></td>
+				<td><b>Club</b></td>
+				<!--<td><b>Position</b></td>-->
+		        <td><b>Tot</b></td>
+		        <td><b>G</b></td>
+		        <td><b>PPG</b></td>
+		        <td><b>T6</b></td>
+		        <td><b>G6</b></td>
+		        <td><b>PPG6</b></td>
+		        <td><b>PPM</b></td>
+		        <td><b>PPM6</b></td>
+		        <td><b>PMG</b></td>
 			  <%
 				 @weeks.each do |week|
 			  %>
@@ -91,8 +99,17 @@
 		        <td><%= player['code'] %></td>
 		        <td><%= player['name'] %></td>
 				<td><%= player['team'] %></td>
-		        <td><%= player['position'] %></td>
+		        <!--<td><%= #player['position'] %></td>-->
 		        <td><%= player['value'] %></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
 		        <%
 				@weeks.each do |week|
 					@points = ''
