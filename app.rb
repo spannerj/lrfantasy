@@ -55,6 +55,7 @@ class Footy < Sinatra::Base
 	get '/populatePlayers' do
 		Thread.new do
 			Player.delete_all
+			Score.delete_all
 		end
 
 		@started = true
