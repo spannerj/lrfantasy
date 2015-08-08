@@ -93,15 +93,17 @@
 		        <td><%= player['name'] %></td>
 				<td><%= player['team'] %></td>
 		        <td><%= player['value'] %></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
+		        <td>player['scores'].count</td> <!--Games-->
+		        <%
+		        	
+		        %>
+		        <td></td> <!--Points per Game-->
+		        <td></td> <!--Total over 6 games-->
+		        <td></td> <!--Games played in last 6 games-->
+		        <td></td> <!--Points per game over last 6 games-->
+		        <td></td> <!--Points per million-->
+		        <td></td> <!--Points per million over last 6 games-->
+		        <td></td> <!--Point per million per game-->
 		        <%
 				@weeks.each do |week|
 					@points = ''
