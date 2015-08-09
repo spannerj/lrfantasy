@@ -94,7 +94,14 @@
 				<td><%= player['team'] %></td>
 		        <td><%= player['value'] %></td>
 		        <td><%= player['scores'].count %></td> <!--Games-->
-		        <td><%= (player['total'].to_i / player['scores'].count).round(2) %></td> <!--Points per Game-->
+		        <%
+		        	if player['scores'].count == 0
+		        		@ppg = 0.00
+		        	else
+		        		@ppg = (player['total'].to_i / player['scores'].count).round(2)
+		        	end	
+		        %>
+		        <td><%= @ppg %></td> <!--Points per Game-->
 		        <td></td> <!--Total over 6 games-->
 		        <td></td> <!--Games played in last 6 games-->
 		        <td></td> <!--Points per game over last 6 games-->
