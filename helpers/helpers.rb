@@ -18,7 +18,7 @@ module Sinatra
 		def get_player_count
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/goalkeepers'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				row_count = b.table(:class => "data sortable").tbody.rows.length
 			ensure
 				b.close
@@ -29,7 +29,7 @@ module Sinatra
 	  	def insert_player
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/goalkeepers'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				table_array = b.table(:class => "data sortable").links.to_a
 				links_array = []
 				table_array.each_with_index do |l, index|
