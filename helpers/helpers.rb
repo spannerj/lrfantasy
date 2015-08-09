@@ -42,6 +42,7 @@ module Sinatra
 			links_array.each_with_index do |link, index|
 	
 				b.goto links_array[index]
+				
 	
 				#store player id
 				player = Player.new

@@ -6,6 +6,7 @@ class CreatePlayers < ActiveRecord::Migration
       	t.string :team
       	t.string :value
         t.string :position
+        t.string :total
 
         t.index :code, unique: true
   	  end

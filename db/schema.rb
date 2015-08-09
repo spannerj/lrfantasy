@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20150726095816) do
     t.string "team"
     t.string "value"
     t.string "position"
+    t.string "total"
   end
 
   add_index "players", ["code"], name: "index_players_on_code", unique: true, using: :btree
