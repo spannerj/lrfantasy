@@ -29,7 +29,7 @@ module Sinatra
 	  	def insert_player
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/goalkeepers'
 				table_array = b.table(:class => "data sortable").links.to_a
 				links_array = []
 				table_array.each_with_index do |l, index|
@@ -60,6 +60,7 @@ module Sinatra
 				#extract points info
 				b.table(:class, "data sortable").tbody.rows.each do |row|
 					p player.name
+					p rows.cells.count
 					row.cells.each_with_index do |cell, i|
 						case i
 							when 0
@@ -122,6 +123,7 @@ module Sinatra
 								else
 									score.points = cell.text.to_i	
 								end	
+								p score
 							when 14
 								p player.position
 								p cell.text
