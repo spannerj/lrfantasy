@@ -80,8 +80,38 @@ module Sinatra
 							when 8
 								score.missed_penalties = cell.text.to_i
 							when 9
-								score.own_goal = cell.text.to_i
+								if player.position == 'Goalkeeper'
+									score.penalty_saved = cell.text.to_i	
+								else	
+									score.own_goal = cell.text.to_i
+								end	
 							when 10
+								if player.position == 'Goalkeeper'
+									score.own_goal = cell.text.to_i	
+								elsif player.position == 'Defender'	
+									score.conceded = cell.text.to_i
+								else
+									score.points = cell.text.to_i	
+								end	
+							when 11
+								if player.position == 'Goalkeeper'
+									score.conceded = cell.text.to_i	
+								else
+									score.full_clean_sheet = cell.text.to_i	
+								end	
+							when 12
+								if player.position == 'Goalkeeper'
+									score.full_clean_sheet = cell.text.to_i	
+								else
+									score.part_clean_sheet = cell.text.to_i	
+								end	
+							when 13
+								if player.position == 'Goalkeeper'
+									score.part_clean_sheet = cell.text.to_i	
+								else
+									score.points = cell.text.to_i	
+								end	
+							when 14
 								score.points = cell.text.to_i
 						end
 					end
