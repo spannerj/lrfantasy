@@ -17,6 +17,7 @@ module Sinatra
 		
 		def get_player_count
 			b = Watir::Browser.new :phantomjs
+			#b = Watir::Browser.new 
 			begin
 				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				row_count = b.table(:class => "data sortable").tbody.rows.length
