@@ -59,6 +59,7 @@ module Sinatra
 					
 				#extract points info
 				b.table(:class, "data sortable").tbody.rows.each do |row|
+					p player
 					row.cells.each_with_index do |cell, i|
 						case i
 							when 0
@@ -114,6 +115,8 @@ module Sinatra
 									score.part_clean_sheet = cell.text.to_i	
 								end	
 							when 13
+								p player.position
+								p cell.text
 								if player.position == 'Goalkeeper'
 									score.part_clean_sheet = cell.text.to_i	
 								else
