@@ -17,7 +17,6 @@ module Sinatra
 		
 		def get_player_count
 			b = Watir::Browser.new :phantomjs
-			#b = Watir::Browser.new 
 			begin
 				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				row_count = b.table(:class => "data sortable").tbody.rows.length
@@ -30,7 +29,7 @@ module Sinatra
 	  	def insert_player
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/goalkeepers'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				table_array = b.table(:class => "data sortable").links.to_a
 				links_array = []
 				table_array.each_with_index do |l, index|
@@ -60,7 +59,6 @@ module Sinatra
 					
 				#extract points info
 				b.table(:class, "data sortable").tbody.rows.each do |row|
-					p player.name
 					row.cells.each_with_index do |cell, i|
 						case i
 							when 0
@@ -82,16 +80,12 @@ module Sinatra
 							when 8
 								score.missed_penalties = cell.text.to_i
 							when 9
-								p player.position
-								p cell.text
 								if player.position == 'Goalkeeper'
 									score.saved_penalties = cell.text.to_i	
 								else	
 									score.own_goal = cell.text.to_i
 								end	
 							when 10
-								p player.position
-								p cell.text
 								if player.position == 'Goalkeeper'
 									score.own_goal = cell.text.to_i	
 								elsif player.position == 'Defender'	
@@ -100,33 +94,24 @@ module Sinatra
 									score.points = cell.text.to_i	
 								end	
 							when 11
-								p player.position
-								p cell.text
 								if player.position == 'Goalkeeper'
 									score.conceded = cell.text.to_i	
 								else
 									score.clean_sheet_full = cell.text.to_i	
 								end	
 							when 12
-								p player.position
-								p cell.text
 								if player.position == 'Goalkeeper'
 									score.clean_sheet_full = cell.text.to_i	
 								else
 									score.clean_sheet_part = cell.text.to_i	
 								end	
 							when 13
-								p player.position
-								p cell.text
 								if player.position == 'Goalkeeper'
-									score.part_clean_sheet = cell.text.to_i	
+									score.clean_sheet_part = cell.text.to_i	
 								else
 									score.points = cell.text.to_i	
 								end	
-								p score
 							when 14
-								#p player.position
-								p cell.text
 								score.points = cell.text.to_i
 						end
 					end
