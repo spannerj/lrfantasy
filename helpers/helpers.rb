@@ -60,7 +60,6 @@ module Sinatra
 				#extract points info
 				b.table(:class, "data sortable").tbody.rows.each do |row|
 					p player.name
-					p rows.cells.count
 					row.cells.each_with_index do |cell, i|
 						case i
 							when 0
@@ -125,7 +124,7 @@ module Sinatra
 								end	
 								p score
 							when 14
-								p player.position
+								#p player.position
 								p cell.text
 								score.points = cell.text.to_i
 						end
