@@ -18,4 +18,6 @@ heroku logs
 heroku logs --app protected-badlands-7136
 
 connect to heroku db
-heroku pg:psql
+heroku pg:psql --app protected-badlands-7136
+
+heroku run rake db:migrate --app protected-badlands-7136
