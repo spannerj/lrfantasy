@@ -10,7 +10,7 @@ gem 'poltergeist'
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 gem 'activerecord-postgres-array'
-gem 'selenium-webdriver', '2.35.0'
+#gem 'selenium-webdriver', '2.35.0'
 
 group :development, :test do
 	gem 'sqlite3'

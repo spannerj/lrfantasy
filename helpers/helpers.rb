@@ -50,6 +50,7 @@ module Sinatra
 				player.team = b.p(:id => 'stats-team').text
 				player.value = b.p(:id => 'stats-value').text
 				player.position = b.p(:id => 'stats-position').text
+				player.total = b.p(:id => 'stats-points').text
 				player.save
 	
 				score = Score.new
