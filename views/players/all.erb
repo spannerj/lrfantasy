@@ -98,16 +98,53 @@
 		        	if player['scores'].count == 0
 		        		@ppg = 0.00
 		        	else
-		        		@ppg = (player['total'].to_i / player['scores'].count).round(2)
+		        		@ppg = (player['total'].to_f / player['scores'].count).round(2)
 		        	end	
 		        %>
 		        <td><%= @ppg %></td> <!--Points per Game-->
-		        <td></td> <!--Total over 6 games-->
-		        <td></td> <!--Games played in last 6 games-->
-		        <td></td> <!--Points per game over last 6 games-->
-		        <td></td> <!--Points per million-->
-		        <td></td> <!--Points per million over last 6 games-->
-		        <td></td> <!--Point per million per game-->
+
+		        <%
+		        	@t6 = 0
+		        	@g = 0
+		        	@last6weeks.each do |week|
+						player['scores'].each do |score|
+							if week.week == score['week']
+								@g += 1
+								@t6 = @t6 + score['total'].to_i
+							end
+						end
+					end
+					
+					if @g == 0
+						@ppg6 = 0.0
+					else
+						@ppg6 = (@t6.to_f / @g.to_f).round(2)
+					end
+					
+					@ppm = 0
+					@ppm6 = 0
+					if player['total'] == 0
+						@ppm = 0.0
+						@ppm6 = 0.0
+					else
+						@ppm = (player['total'].to_f / player['value'][1..-1].chomp('m').to_f).round(2)
+						@ppm6 = (@t6 / player['value'][1..-1].chomp('m').to_f).round(2)
+					end
+					
+					@ppmg = 0
+					if @g == 0
+						@ppmg = 0.0
+					else
+						@ppmg = (@ppm / @g).round(2)
+					end
+					
+		        %>
+		        <td><%= @t6 %></td> <!--Total over 6 games-->
+		        <td><%= @g %></td> <!--Games played in last 6 games-->
+		        <td><%= @ppg6 %></td> <!--Points per game over last 6 games-->
+		        <td><%= @ppm %></td> <!--Points per million-->
+		        <td><%= @ppm6 %></td> <!--Points per million over last 6 games-->
+		        <td><%= @ppmg %></td> <!--Point per million per game-->
 		        <%
 				@weeks.each do |week|
 					@points = ''

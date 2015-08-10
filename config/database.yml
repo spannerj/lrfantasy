@@ -7,10 +7,11 @@
 development:
   adapter: postgresql
   database: fantasyfooty
-  pool: 5
+  pool: 10
   username: ubuntu
   password: password
   host: localhost
+  timeout: 6000
 
 production:
   adapter: postgresql
