@@ -133,8 +133,8 @@
 						@ppm = 0.0
 						@ppm6 = 0.0
 					else
-						@ppm = (player['total'].to_f / player['value'][1..-1].chomp('m').to_f).round(2)
-						@ppm6 = (@t6 / player['value'][1..-1].chomp('m').to_f).round(2)
+						@ppm = (player['total'].to_f / player['value'].to_f).round(2)
+						@ppm6 = (@t6 / player['value'].to_f).round(2)
 					end
 					
 					@ppmg = 0

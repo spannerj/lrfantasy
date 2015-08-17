@@ -18,7 +18,7 @@ module Sinatra
 		def get_player_count
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/gk'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				row_count = b.table(:class => "data sortable").tbody.rows.length
 			ensure
 				b.close
@@ -29,33 +29,31 @@ module Sinatra
 	  	def insert_player
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/gk'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
 				table_array = b.table(:class => "data sortable").links.to_a
 				links_array = []
 				table_array.each_with_index do |l, index|
 					
-				if (index %2 == 0) then
+				#if (index %2 == 0) then
 					links_array.push(l.href)
-				end
+				#end
 			end
+			p links_array.count
 	
 			links_array.each_with_index do |link, index|
 	
 				b.goto links_array[index]
 				
-	
 				#store player id
 				player = Player.new
 				player.code = links_array[index][-4,4]
 				player.name = b.p(:id => 'stats-name').text
 				player.team = b.p(:id => 'stats-team').text
-				player.value = b.p(:id => 'stats-value').text
+				val = b.p(:id => 'stats-value').text
+				player.value = val.match(/^[£](\d.\d)[m]$/)[1]
 				player.position = b.p(:id => 'stats-position').text
 				player.total = b.p(:id => 'stats-points').text
 				player.save
-	
-				# score = Score.new
-				# score.code = player.code
 	
 				b.goto link
 					
