@@ -18,7 +18,7 @@ module Sinatra
 		def get_player_count
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/gk'
 				row_count = b.table(:class => "data sortable").tbody.rows.length
 			ensure
 				b.close
@@ -29,7 +29,7 @@ module Sinatra
 	  	def insert_player
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/gk'
 				table_array = b.table(:class => "data sortable").links.to_a
 				links_array = []
 				table_array.each_with_index do |l, index|
@@ -54,13 +54,15 @@ module Sinatra
 				player.total = b.p(:id => 'stats-points').text
 				player.save
 	
-				score = Score.new
-				score.code = player.code
+				# score = Score.new
+				# score.code = player.code
 	
 				b.goto link
 					
 				#extract points info
 				b.table(:class, "data sortable").tbody.rows.each do |row|
+					score = Score.new
+					score.code = player.code
 					row.cells.each_with_index do |cell, i|
 						case i
 							when 0
