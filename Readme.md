@@ -8,6 +8,9 @@ sudo sudo -u postgres psql
 Create DB
 create database "fantasyfooty";
 
+Connect to database
+\connect fantasyfooty
+
 RUN
 rackup -p $PORT -o $IP 
 
