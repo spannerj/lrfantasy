@@ -73,7 +73,9 @@ class Footy < Sinatra::Base
 	end
 	
 	get '/cron' do
-		populate_database
+		Thread.new do
+			populate_database
+		end
 		halt 200
 	end	
 end	
