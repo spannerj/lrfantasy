@@ -59,6 +59,9 @@ module Sinatra
 				
 				if !Player.exists?(:code => player.code)
 					player.save
+				else
+					db_player = Player.find_by(:code => player.code)
+					db_player.update(:total => player.total)
 				end	
 	
 				b.goto link
