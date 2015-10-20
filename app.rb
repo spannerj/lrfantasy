@@ -36,7 +36,12 @@ class Footy < Sinatra::Base
 		@started = session['started']
 		
 		@players = Player.order('substr(code,1,1)', value: :desc).as_json
-		@weeks = Score.select(:week).distinct.order('CAST(week as INT) DESC')
+		@weeks = Score.select(:week).distinct.order(week: :desc)
+	    unsorted_weeks = Score.select(:week).distinct.order(week: :desc)
+	    unsorted_weeks.each do |res| 
+	    	@weeks.push(res.week)
+	    end
+	    @weeks.reverse!
 	    @last6weeks = []
 	    @last6weeks =@weeks[0..5]
 		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total').as_json 
