@@ -159,7 +159,7 @@
 				@weeks.each do |week|
 					@points = ''
 					player['scores'].each do |score|
-						if week == score['week']
+						if week.to_s == score['week']
 							@points = score['total']
 						end
 					end
