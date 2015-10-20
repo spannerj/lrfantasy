@@ -60,10 +60,10 @@ class Footy < Sinatra::Base
 	
 
 	get '/populatePlayers' do
-		Thread.new do
-			Player.delete_all
-			Score.delete_all
-		end
+		# Thread.new do
+		# 	Player.delete_all
+		# 	Score.delete_all
+		# end
 
 		@started = true
 		session['started'] = @started
@@ -71,10 +71,16 @@ class Footy < Sinatra::Base
 		session['total'] = @total
 
 		Thread.new do
-			insert_player
+			populate_database
 		end
 		flash[:notice] = 'Scraping has started. Get a coffee as it takes about 25 minutes!'
 	  redirect '/'
 	end
-
+	
+	get '/cron' do
+		Thread.new do
+			populate_database
+		end
+		halt 200
+	end	
 end	

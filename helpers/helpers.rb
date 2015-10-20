@@ -10,6 +10,9 @@ module Sinatra
 	
 		class Score < ActiveRecord::Base
 		end
+		
+		class AppStatu < ActiveRecord::Base
+		end
 	
 		def logger
 			request.logger
@@ -26,7 +29,7 @@ module Sinatra
 			row_count
 		end
 	
-	  	def insert_player
+	  	def populate_database
 			b = Watir::Browser.new :phantomjs
 			begin
 				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
@@ -38,7 +41,6 @@ module Sinatra
 					links_array.push(l.href)
 				#end
 			end
-			p links_array.count
 	
 			links_array.each_with_index do |link, index|
 	
@@ -47,13 +49,20 @@ module Sinatra
 				#store player id
 				player = Player.new
 				player.code = links_array[index][-4,4]
+				puts player.code
 				player.name = b.p(:id => 'stats-name').text
 				player.team = b.p(:id => 'stats-team').text
 				val = b.p(:id => 'stats-value').text
 				player.value = val.match(/^[£](\d.\d)[m]$/)[1]
 				player.position = b.p(:id => 'stats-position').text
 				player.total = b.p(:id => 'stats-points').text
-				player.save
+				
+				if !Player.exists?(:code => player.code)
+					player.save
+				else
+					db_player = Player.find_by(:code => player.code)
+					db_player.update(:total => player.total)
+				end	
 	
 				b.goto link
 					
@@ -117,9 +126,14 @@ module Sinatra
 								score.points = cell.text.to_i
 						end
 					end
-					score.save
+					if !Score.exists?(:code => score.code, :week => score.week)
+						score.save
+					end	
 				end
 			end
+			as = AppStatu.take
+			as.last_refresh = Time.now.iso8601
+			as.save
 			ensure
 				b.close
 			end
