@@ -114,7 +114,7 @@
 		        	@g = 0
 		        	@last6weeks.each do |week|
 						player['scores'].each do |score|
-							if week.week == score['week']
+							if week == score['week']
 								@g += 1
 								@t6 = @t6 + score['total'].to_i
 							end
