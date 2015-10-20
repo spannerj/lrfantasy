@@ -40,8 +40,9 @@ class Footy < Sinatra::Base
 		@weeks = []
 	    unsorted_weeks = Score.select(:week).distinct.order(week: :desc)
 	    unsorted_weeks.each do |res| 
-	    	@weeks.push(res.week)
+	    	@weeks.push(res.week.to_i)
 	    end
+	    @weeks.sort!
 	    @weeks.reverse!
 	    @last6weeks = []
 	    @last6weeks =@weeks[0..5]
