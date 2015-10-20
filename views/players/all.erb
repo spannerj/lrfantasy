@@ -85,7 +85,7 @@
 			  <%
 				 @weeks.each do |week|
 			  %>
-				<td><b><%= week.week %></b></td>
+				<td><b><%= week %></b></td>
 			  <%
 				 end
 			  %>
@@ -159,7 +159,7 @@
 				@weeks.each do |week|
 					@points = ''
 					player['scores'].each do |score|
-						if week.week == score['week']
+						if week == score['week']
 							@points = score['total']
 						end
 					end
