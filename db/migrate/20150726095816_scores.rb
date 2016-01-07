@@ -3,7 +3,7 @@ class Scores < ActiveRecord::Migration
 	create_table :scores do |t|
 		t.string :code
 		t.string :week
-		t.integer :opposition
+		t.string :opposition
 		t.integer :goals
 		t.integer :key_contribution
 		t.integer :started_game
@@ -22,6 +22,7 @@ class Scores < ActiveRecord::Migration
 	end
   end
 
+  #drop	
   def down
   	drop_table :scores
   end
