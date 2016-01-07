@@ -63,10 +63,10 @@ class Footy < Sinatra::Base
 	
 
 	get '/populatePlayers' do
-		# Thread.new do
-		# 	Player.delete_all
-		# 	Score.delete_all
-		# end
+		Thread.new do
+			Player.delete_all
+			Score.delete_all
+		end
 
 		@started = true
 		session['started'] = @started
@@ -84,6 +84,6 @@ class Footy < Sinatra::Base
 		Thread.new do
 			populate_database
 		end
-		halt 200
+		status 200
 	end	
 end	
