@@ -63,11 +63,6 @@ class Footy < Sinatra::Base
 	
 
 	get '/populatePlayers' do
-		Thread.new do
-			Player.delete_all
-			Score.delete_all
-		end
-
 		@started = true
 		session['started'] = @started
 		@total = get_player_count

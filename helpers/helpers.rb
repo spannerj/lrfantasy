@@ -30,6 +30,9 @@ module Sinatra
 		end
 	
 	  	def populate_database
+	  		Player.delete_all
+			Score.delete_all
+		
 			b = Watir::Browser.new :phantomjs
 			begin
 				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
