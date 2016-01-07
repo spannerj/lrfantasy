@@ -129,7 +129,7 @@ module Sinatra
 								score.points = cell.text.to_i
 						end
 					end
-					if !Score.exists?(:code => score.code, :week => score.week)
+					if !Score.exists?(:code => score.code, :opposition => score.opposition, :week => score.week)
 						score.save
 					end	
 				end
