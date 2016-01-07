@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20150903230817) do
   create_table "scores", force: true do |t|
     t.string  "code"
     t.string  "week"
-    t.integer "opposition"
+    t.string  "opposition"
     t.integer "goals"
     t.integer "key_contribution"
     t.integer "started_game"
