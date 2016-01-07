@@ -35,7 +35,8 @@ module Sinatra
 		
 			b = Watir::Browser.new :phantomjs
 			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
+				# b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
+				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/statistics/teams/mcy'
 				table_array = b.table(:class => "data sortable").links.to_a
 				links_array = []
 				table_array.each_with_index do |l, index|
@@ -74,6 +75,7 @@ module Sinatra
 					score = Score.new
 					score.code = player.code
 					row.cells.each_with_index do |cell, i|
+						p cell.text
 						case i
 							when 0
 								score.week = cell.text
