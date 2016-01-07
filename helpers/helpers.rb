@@ -30,8 +30,8 @@ module Sinatra
 		end
 	
 	  	def populate_database
-	  		Player.delete_all
-			Score.delete_all
+	  #		Player.delete_all
+			# Score.delete_all
 		
 			b = Watir::Browser.new :phantomjs
 			begin
