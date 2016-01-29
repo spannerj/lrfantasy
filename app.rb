@@ -13,6 +13,7 @@ end
 
 class Footy < Sinatra::Base
 	set :bind, '0.0.0.0'
+  set :port, 4567
 
 	#register helpers for use
 	helpers Sinatra::Helpers

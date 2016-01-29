@@ -1,17 +1,17 @@
-#development:
-#  adapter: sqlite3
-#  database: db/development.sqlite3
-#  pool: 5
-#  timeout: 5000
-
 development:
-  adapter: postgresql
-  database: fantasyfooty
-  pool: 10
-  username: ubuntu
-  password: password
-  host: localhost
-  timeout: 6000
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+#development:
+#  adapter: postgresql
+#  database: fantasyfooty
+#  pool: 10
+#  username: ubuntu
+#  password: password
+#  host: localhost
+#  timeout: 6000
 
 production:
   adapter: postgresql
