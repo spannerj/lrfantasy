@@ -1,5 +1,6 @@
 #!/bin/bash
-PHANTOM_JS="phantomjs-1.9.8-linux-x86_64"
+#PHANTOM_JS="phantomjs-1.9.8-linux-x86_64"
+PHANTOM_JS="phantomjs-2.1.1-linux-x86_64"
 if [[ $EUID -ne 0 ]]; then
   echo "You must be a root user" 2>&1
   exit 1
