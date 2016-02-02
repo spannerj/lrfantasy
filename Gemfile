@@ -5,8 +5,8 @@ gem 'activerecord'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'nokogiri'
-gem 'sinatra-flash'
-gem 'sinatra-redirect-with-flash'
+# gem 'sinatra-flash'
+# gem 'sinatra-redirect-with-flash'
 
 group :development, :test do
 	gem 'sqlite3'

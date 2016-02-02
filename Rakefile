@@ -1,8 +1,6 @@
 require "sinatra/activerecord/rake"
 require_relative './app'
-
 require 'bundler/setup'
- 
 require 'active_record'
  
 include ActiveRecord::Tasks

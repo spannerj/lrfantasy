@@ -1,10 +1,10 @@
 require 'active_record'
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 require './config/environments'
 require 'sinatra/activerecord'
-require 'sinatra/flash'
-require 'sinatra/redirect_with_flash'
+# require 'sinatra/flash'
+# require 'sinatra/redirect_with_flash'
 
 require_relative 'helpers/helpers'
 
@@ -13,6 +13,11 @@ helpers do
 end
 
 class Footy < Sinatra::Base
+
+  configure :development do
+    register Sinatra::Reloader
+  end
+
 	set :bind, '0.0.0.0'
   set :port, 4567
 
