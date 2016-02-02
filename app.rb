@@ -26,7 +26,7 @@ class Footy < Sinatra::Base
 
 	#ActiveRecord::Base.logger = Logger.new(STDOUT)
 
-	register Sinatra::Flash
+	#register Sinatra::Flash
 
 	get '/' do
 		@players = Player.order('substr(code,1,1)', value: :desc).as_json
