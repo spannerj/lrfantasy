@@ -3,17 +3,14 @@ source 'https://rubygems.org'
 
 gem 'activerecord'
 gem 'sinatra'
-gem "sinatra-activerecord"
-gem "watir-webdriver"
-gem 'phantomjs', :require => 'phantomjs/poltergeist'
-gem 'poltergeist'
+gem 'sinatra-activerecord'
+gem 'nokogiri'
 gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
-gem 'activerecord-postgres-array'
-#gem 'selenium-webdriver', '2.35.0'
 
 group :development, :test do
 	gem 'sqlite3'
+  gem 'sinatra-reloader'
 end
 
 group :production do

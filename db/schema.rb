@@ -14,8 +14,11 @@
 ActiveRecord::Schema.define(version: 20150903230817) do
 
   create_table "app_status", force: true do |t|
-    t.datetime "last_refresh"
+    t.datetime "started"
+    t.datetime "finished"
     t.boolean  "scraping"
+    t.integer  "player_count"
+    t.integer  "current_player"
   end
 
   create_table "players", force: true do |t|
@@ -24,27 +27,28 @@ ActiveRecord::Schema.define(version: 20150903230817) do
     t.string "team"
     t.string "value"
     t.string "position"
+    t.string "total"
   end
 
   add_index "players", ["code"], name: "index_players_on_code", unique: true
 
   create_table "scores", force: true do |t|
-    t.string "code"
-    t.string "week"
-    t.string "opposition"
-    t.string "goals"
-    t.string "key_contribution"
-    t.string "started_game"
-    t.string "substitute_appearance"
-    t.string "yellow_card"
-    t.string "red_card"
-    t.string "missed_penalties"
-    t.string "saved_penalties"
-    t.string "own_goal"
-    t.string "conceeded"
-    t.string "clean_sheet_full"
-    t.string "clean_sheet_part"
-    t.string "points"
+    t.string  "code"
+    t.string  "week"
+    t.string  "opposition"
+    t.integer "goals"
+    t.integer "key_contribution"
+    t.integer "started_game"
+    t.integer "substitute_appearance"
+    t.integer "yellow_card"
+    t.integer "red_card"
+    t.integer "missed_penalties"
+    t.integer "saved_penalties"
+    t.integer "own_goal"
+    t.integer "conceded"
+    t.integer "clean_sheet_full"
+    t.integer "clean_sheet_part"
+    t.integer "points"
   end
 
   add_index "scores", ["code"], name: "index_scores_on_code"

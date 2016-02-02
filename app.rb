@@ -1,5 +1,6 @@
 require 'active_record'
 require 'sinatra'
+require 'sinatra/reloader'
 require './config/environments'
 require 'sinatra/activerecord'
 require 'sinatra/flash'
@@ -18,35 +19,21 @@ class Footy < Sinatra::Base
 	#register helpers for use
 	helpers Sinatra::Helpers
 
-	ActiveRecord::Base.logger = Logger.new(STDOUT)
+	#ActiveRecord::Base.logger = Logger.new(STDOUT)
 
-	enable :sessions
 	register Sinatra::Flash
 
-	before do
-		if session['total'].nil?
-			session['total'] = 0
-		end
-		if session['started'].nil?
-			session['started'] = false
-		end
-	end
-
 	get '/' do
-		@total = session['total']
-		@started = session['started']
-		
 		@players = Player.order('substr(code,1,1)', value: :desc).as_json
-		#@weeks = Score.select(:week).distinct.order(week: :desc)
 		@weeks = []
-	    unsorted_weeks = Score.select(:week).distinct.order(week: :desc)
-	    unsorted_weeks.each do |res| 
-	    	@weeks.push(res.week.to_i)
-	    end
-	    @weeks.sort!
-	    @weeks.reverse!
-	    @last6weeks = []
-	    @last6weeks =@weeks[0..5]
+    unsorted_weeks = Score.select(:week).distinct.order(week: :desc)
+    unsorted_weeks.each do |res|
+      @weeks.push(res.week.to_i)
+    end
+    @weeks.sort!
+    @weeks.reverse!
+    @last6weeks = []
+    @last6weeks = @weeks[0..5]
 		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total').as_json 
 		
 		@players.each do | player |
@@ -57,29 +44,26 @@ class Footy < Sinatra::Base
 				end	
 			end
 			player['scores'] = week_scores
-		end
+    end
 
 		erb :'players/all'
 	end
 	
 
-	get '/populatePlayers' do
-		@started = true
-		session['started'] = @started
-		@total = get_player_count
-		session['total'] = @total
-
-		Thread.new do
-			populate_database
-		end
-		flash[:notice] = 'Scraping has started. Get a coffee as it takes about 25 minutes!'
-	  redirect '/'
-	end
+	# get '/populatePlayers' do
+	# 	Thread.new do
+	# 		populate_database
+   #  end
+  #
+	# 	flash[:notice] = 'Scraping has started. Get a coffee as it takes about 25 minutes!'
+	#   redirect '/'
+	# end
 	
 	get '/cron' do
+    @link_list = get_player_codes
 		Thread.new do
 			populate_database
 		end
 		status 200
 	end	
-end	
+end

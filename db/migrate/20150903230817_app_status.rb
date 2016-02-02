@@ -1,8 +1,11 @@
 class AppStatus < ActiveRecord::Migration
   def up
     create_table :app_status do |t|
-		t.timestamp :last_refresh
-		t.boolean :scraping
+      t.timestamp :started
+      t.timestamp :finished
+      t.boolean :scraping
+      t.integer :player_count
+      t.integer :current_player
 	end
   end
 

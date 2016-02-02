@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress RubyScope, RubyScope -->
 <meta charset="utf-8">
 <html>
   <head>
@@ -9,106 +10,52 @@
 		<script src="js/bootstrap.min.js"></script>
   </head>
   <body>
-  	<%
-	   cnt = @players.count
-
-	   @lock = 'disabled="disabled"'
-	   @text = "Running"
-
-	   if !@started 
-		 @lock = ''
-		 @text = "Start Scrape"
-	   end
-	%>
-
-	<!-- Percentage Calculations -->
-	<%
-	    @total = session['total']
-		if @total == 0
-		  @done = 0
-		  @todo = 100.0
-		else
-		  @done = cnt.to_f / @total.to_f * 100.0
-		  @todo = 100.0 - @done
-		end
-
-		if (@total == cnt) and (@total > 0)
-			@started = false
-			session['started'] = false
-		end
-	%>
-  	<div class="col-md-2"></div>
-  	<div class="col-md-8">
-	    <br>
-	  	<button type="button" id="code" onclick="if (confirm_click()) { window.location.href='populatePlayers' };" value="Redirect" <%= @lock %> class="btn btn-lg btn-default" ><%= @text %></button>
-	 	<br>
-
-		<div class="container">
-			<% if flash[:notice] %>
-			    <br>
-				<p class="alert alert-success"><%= flash[:notice] %>
-			<% end %>
-		</div>
-
-	  	<% if @started %>
-		  	<meta http-equiv="refresh" content="5">
-		    <br>
-		  	Progress:
-			<div class="progress progress-striped active">
-				<div class="progress-bar progress-bar-success" style="width: <%= @done %>%"><%= cnt.to_s %></div>
-				<div class="progress-bar progress-bar-info" style="width: <%= @todo %>%"><%= @total.to_s %></div>
-			</div>
-		<% else %>
-		  <meta http-equiv="refresh" content="60000">
-		<% end %>
-
 	    <br>
 		<table class="table table-striped" align="center">
 			<tr>
-		        <td><b>Key</b></td>
+		    <td><b>Key</b></td>
 				<td><b>Name</b></td>
 				<td><b>Club</b></td>
 				<td><b>Val</b></td>
-		        <td><b>Tot</b></td>
-		        <td><b>G</b></td>
-		        <td><b>PPG</b></td>
-		        <td><b>T6</b></td>
-		        <td><b>G6</b></td>
-		        <td><b>PPG6</b></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td><b>PPM</b></td>
-		        <td><b>PPM6</b></td>
-		        <td></td>
-		        <td><b>PMG</b></td>
+				<td><b>Tot</b></td>
+				<td><b>G</b></td>
+				<td><b>PPG</b></td>
+				<td><b>T6</b></td>
+				<td><b>G6</b></td>
+				<td><b>PPG6</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><b>PPM</b></td>
+				<td><b>PPM6</b></td>
+				<td></td>
+				<td><b>PMG</b></td>
 			  <%
 				 @weeks.each do |week|
 			  %>
 				<td><b><%= week %></b></td>
 			  <%
-				 end
+					end
 			  %>
 			</tr>
 		    <%
 		       @players.each_with_index  do | player, index |
 			%>
 			<tr>
-		        <td><%= player['code'] %></td>
-		        <td><%= player['name'] %></td>
+				<td><%= player['code'] %></td>
+				<td><%= player['name'] %></td>
 				<td><%= player['team'] %></td>
-		        <td><%= player['value'] %></td>
-		        <td><%= player['total'] %></td>
-		        <td><%= player['scores'].count %></td> <!--Games-->
-		        <%
-		        	if player['scores'].count == 0
-		        		@ppg = 0.00
-		        	else
-		        		@ppg = (player['total'].to_f / player['scores'].count).round(2)
-		        	end	
-		        %>
-		        <td><%= @ppg %></td> <!--Points per Game-->
-
+				<td><%= player['value'] %></td>
+				<td><%= player['total'] %></td>
+				<td><%= player['scores'].count %></td> <!--Games-->
+				<%
+					if player['scores'].count == 0
+						@ppg = 0.00
+					else
+						@ppg = (player['total'].to_f / player['scores'].count).round(2)
+					end
+				%>
+				<td><%= @ppg %></td> <!--Points per Game-->
 		        <%
 		        	@t6 = 0
 		        	@g = 0
@@ -176,19 +123,5 @@
 	</div>
 	<div class="col-md-2"></div>
   </body>
-	<script>
-		function confirm_click() {
-			var confirmed = confirm("Are you sure?");
-
-			return confirmed;
-		}
-
-		jQuery(function ($) {
-			$('#code').click(function () {
-				var val = perc;
-				$('.progress-bar').width(val).text(val)
-			})
-		});
-	</script>
 
 </html>
