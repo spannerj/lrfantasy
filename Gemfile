@@ -5,6 +5,8 @@ gem 'activerecord'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'nokogiri'
+gem 'mongo_mapper'
+gem 'bson_ext'
 # gem 'sinatra-flash'
 # gem 'sinatra-redirect-with-flash'
 

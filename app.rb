@@ -1,71 +1,52 @@
-require 'active_record'
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require './config/environments'
-require 'sinatra/activerecord'
-# require 'sinatra/flash'
-# require 'sinatra/redirect_with_flash'
-
 require_relative 'helpers/helpers'
 
-helpers do
-	include Rack::Utils
-end
+MongoMapper.connection = Mongo::Connection.new('localhost', 27017)
+MongoMapper.database = 'fantasy'
+Player.ensure_index(:code)
 
 class Footy < Sinatra::Base
 
   configure :development do
     register Sinatra::Reloader
+    also_reload 'helpers/helpers'
   end
 
 	set :bind, '0.0.0.0'
   set :port, 4567
 
-	#register helpers for use
-	helpers Sinatra::Helpers
-
-	#ActiveRecord::Base.logger = Logger.new(STDOUT)
-
-	#register Sinatra::Flash
-  before do
-    app_init
+  configure do
+    register Sinatra::Reloader
+    also_reload './helpers/helpers.rb'
+    helpers Sinatra::Helpers
   end
 
-	get '/' do
+  get '/players/populate' do
+    @link_list = get_player_codes
+    Thread.new do
+      populate_database
+    end
+    status 200
+  end
+
+	get '/players/all' do
 		@players = Player.order('substr(code,1,1)', value: :desc).as_json
-		@weeks = []
-    unsorted_weeks = Score.select(:week).distinct.order(week: :desc)
+
+    @weeks = []
+    unsorted_weeks = MongoMapper.database.eval(' db.players.distinct("stats.week").sort( { week: -1 } ) ')
     unsorted_weeks.each do |res|
-      @weeks.push(res.week.to_i)
+      @weeks.push(res.to_i)
     end
     @weeks.sort!
     @weeks.reverse!
+
     @last6weeks = []
     @last6weeks = @weeks[0..5]
-		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total').as_json 
-		
-		@players.each do | player |
-			week_scores = []
-			@scores.each do | score |
-				if (player['code'] == score['code'])
-					week_scores.push(score)
-				end	
-			end
-			player['scores'] = week_scores
-    end
 
 		erb :'players/all'
 	end
-	
-
-	# get '/populatePlayers' do
-	# 	Thread.new do
-	# 		populate_database
-   #  end
-  #
-	# 	flash[:notice] = 'Scraping has started. Get a coffee as it takes about 25 minutes!'
-	#   redirect '/'
-	# end
 	
 	get '/cron' do
     @link_list = get_player_codes
