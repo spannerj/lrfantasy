@@ -19,6 +19,88 @@ module Sinatra
 		class AppStatu < ActiveRecord::Base
 		end
 
+		def get_display_data
+			players = []
+			sql = '
+							select players.code, name, team, value, position, total, scores
+							from players, scores
+							where scores.code = players.code
+							order by substr(players.code,1,1), value desc
+						'
+			res = ActiveRecord::Base.connection.exec_query(sql)
+
+			res.each do | player |
+				player = format_player_scores(player)
+				players.push(player)
+			end
+
+			#calculate weeks
+			weeks = calculate_weeks
+			last6weeks = weeks[0..5]
+
+			return weeks, last6weeks, players
+		end
+
+		def format_player_scores(player)
+			week_scores = []
+			weeks = player['scores'].split('@')
+
+			weeks.each do | week |
+
+				values = week.split(',')
+
+				case player['position']
+					when 'Goalkeeper'
+						points = values[14].to_i
+					when 'Defender'
+						points = values[13].to_i
+					when 'Midfielder', 'Striker'
+						points = values[10].to_i
+				end
+
+				existing_week_index = check_existing_week(week_scores, values[0])
+				if existing_week_index >= 0
+					week_scores[existing_week_index]['total'] = week_scores[existing_week_index]['total'] + points
+				else
+					score = {}
+					score['week'] = values[0]
+					score['total'] =  points
+					week_scores.push(score)
+				end
+
+			end
+
+			player['scores'] = week_scores
+
+			player
+		end
+
+		def check_existing_week(week_scores, new_week)
+			week_scores.each_with_index do | week, i |
+				if week['week'] == new_week
+					return i
+				end
+			end
+
+			-1
+		end
+
+		def calculate_weeks
+			scores = Score.pluck(:scores)
+			week_set = Set.new
+
+			scores.each do | score |
+				weeks = score.split('@')
+				weeks.each do |week|
+					values = week.split(',')
+					week_set.add values[0].to_i
+				end
+			end
+			weeks = week_set.to_a
+			weeks.sort!
+			weeks.reverse!
+		end
+
 		def get_player_codes
 			as = AppStatu.first
 			url = 'https://fantasyfootball.telegraph.co.uk/premierleague/players/all'
@@ -38,8 +120,6 @@ module Sinatra
 		end
 
   	def populate_database
-	  	# Player.delete_all
-			# Score.delete_all
 
 			p 'Started'
 			p Time.now
@@ -72,27 +152,23 @@ module Sinatra
 					db_player.update(:total => player.total)
 				end
 
-				score = Score.new
-				score.code = player.code
 				scores = ''
 				player_page.search('#individual-player tbody tr').each do |row|
-					week_score = '@'
+					week_score = ''
 
 					row.search('td').each do |cell|
 						week_score = week_score + cell.text + ','
 					end
 
-					p week_score
-					scores = scores + week_score.chomp
+					scores = scores + week_score.chomp(',') + '@'
 				end
-				score.opposition = scores
-				p score
 
 				begin
-					score.save
+					Score.where( :code => player.code ).first_or_create( :code => player.code ).update( :scores => scores.chomp('@') )
 				rescue Exception => e
 					p e.message
 				end
+
 			end
 
 			@started = false

@@ -33,24 +33,10 @@ ActiveRecord::Schema.define(version: 20150903230817) do
   add_index "players", ["code"], name: "index_players_on_code", unique: true
 
   create_table "scores", force: true do |t|
-    t.string  "code"
-    t.string  "week"
-    t.string  "opposition"
-    t.integer "goals"
-    t.integer "key_contribution"
-    t.integer "started_game"
-    t.integer "substitute_appearance"
-    t.integer "yellow_card"
-    t.integer "red_card"
-    t.integer "missed_penalties"
-    t.integer "saved_penalties"
-    t.integer "own_goal"
-    t.integer "conceded"
-    t.integer "clean_sheet_full"
-    t.integer "clean_sheet_part"
-    t.integer "points"
+    t.string "code"
+    t.string "scores"
   end
 
-  add_index "scores", ["code"], name: "index_scores_on_code"
+  add_index "scores", ["code"], name: "index_scores_on_code", unique: true
 
 end

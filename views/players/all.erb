@@ -52,6 +52,7 @@
 		   if player['scores'].count == 0
 			 @ppg = 0.00
 		   else
+			 p player['scores'].count
 			 @ppg = (player['total'].to_f / player['scores'].count).round(2)
 		   end
 		%>
@@ -61,7 +62,7 @@
 		   @g = 0
 		   @last6weeks.each do |week|
 			 player['scores'].each do |score|
-			   if week == score['week']
+			   if week.to_s == score['week']
 				 @g += 1
 				 @t6 = @t6 + score['total'].to_i
 			   end

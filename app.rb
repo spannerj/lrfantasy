@@ -29,48 +29,19 @@ class Footy < Sinatra::Base
 		app_init
 	end
 
-	get '/' do
-
-		@players = Player.order('substr(code,1,1)', value: :desc).as_json
-		@weeks = []
-	    unsorted_weeks = Score.select(:week).distinct.order(week: :desc)
-	    unsorted_weeks.each do |res| 
-	    	@weeks.push(res.week.to_i)
-	    end
-	    @weeks.sort!
-	    @weeks.reverse!
-	    @last6weeks = []
-	    @last6weeks =@weeks[0..5]
-		@scores = Score.group(:week, :code).order(:week).select('code, week, sum(points) as total').as_json 
-		
-		@players.each do | player |
-			week_scores = []
-			@scores.each do | score |
-				if (player['code'] == score['code'])
-					week_scores.push(score)
-				end	
-			end
-			player['scores'] = week_scores
-		end
-
-		erb :'players/all'
-
+	get '/sql' do
+		content_type :json
+		sql = 'select players.code, name, team, value, position, total, scores from players, scores where scores.code = players.code'
+		res = ActiveRecord::Base.connection.exec_query(sql)
+		player = res[0]
+		player.to_json
 	end
-	#
-  #
-	# get '/populatePlayers' do
-	# 	@started = true
-	# 	session['started'] = @started
-	# 	@total = get_player_count
-	# 	session['total'] = @total
-  #
-	# 	Thread.new do
-	# 		populate_database
-	# 	end
-	# 	flash[:notice] = 'Scraping has started. Get a coffee as it takes about 25 minutes!'
-	#   redirect '/'
-	# end
-	
+
+	get '/' do
+		@weeks, @last6weeks, @players = get_display_data
+		erb :'players/all'
+	end
+
 	get '/cron' do
 		@link_list = get_player_codes
 		Thread.new do
