@@ -16,8 +16,8 @@ class Footy < Sinatra::Base
 		register Sinatra::Reloader
 	end
 
-	set :bind, '0.0.0.0'
-  set :port, 4567
+  # set :bind, '0.0.0.0'
+  # set :port, 4567
 
 	#register helpers for use
 	helpers Sinatra::Helpers
