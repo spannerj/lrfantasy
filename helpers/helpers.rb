@@ -145,7 +145,7 @@ module Sinatra
 				player.position = player_page.search('#stats-position').text
 				player.total = player_page.search('#stats-points').text
 
-				if !Player.exists?(:code => player.code)
+				unless Player.exists?(:code => player.code)
 					player.save
 				else
 					db_player = Player.find_by(:code => player.code)
