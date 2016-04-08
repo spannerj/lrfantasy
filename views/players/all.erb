@@ -1,194 +1,130 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress RubyScope, RubyScope -->
 <meta charset="utf-8">
 <html>
-  <head>
-  		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-  </head>
-  <body>
-  	<%
-	   cnt = @players.count
-
-	   @lock = 'disabled="disabled"'
-	   @text = "Running"
-
-	   if !@started 
-		 @lock = ''
-		 @text = "Start Scrape"
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/lr-table-sort.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sorttable.js"></script>
+</head>
+<body>
+<br>
+<table class="table table-striped sortable" align="center">
+  <tr>
+	<td><strong>Key</strong></td>
+	<td><strong>Name</strong></td>
+	<td><strong>Club</strong></td>
+	<td><strong>Val</strong></td>
+	<td><strong>Tot</strong></td>
+	<td><strong>G</strong></td>
+	<td><strong>PPG</strong></td>
+	<td><strong>T6</strong></td>
+	<td><strong>G6</strong></td>
+	<td><strong>PPG6</strong></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><strong>PPM</strong></td>
+	<td><strong>PPM6</strong></td>
+	<td></td>
+	<td><strong>PMG</strong></td>
+	<%
+	   @weeks.each do |week|
+	%>
+		<td><strong><%= week %></strong></td>
+	<%
 	   end
 	%>
+  </tr>
+  <%
+	 @players.each do | player|
+  %>
+	  <tr>
+		<td><%= player['code'] %></td>
+		<td nowrap="nowrap"><%= player['name'] %></td>
+		<td nowrap="nowrap"><%= player['team'] %></td>
+		<td><%= player['value'] %></td>
+		<td><%= player['total'] %></td>
+		<td><%= player['scores'].count %></td> <!--Games-->
+		<%
+		   if player['scores'].count == 0
+			 @ppg = 0.00
+		   else
+			 p player['scores'].count
+			 @ppg = (player['total'].to_f / player['scores'].count).round(2)
+		   end
+		%>
+		<td><%= @ppg %></td> <!--Points per Game-->
+		<%
+		   @t6 = 0
+		   @games = 0
+		   @last6weeks.each do |week|
+			 player['scores'].each do |score|
+			   if week.to_s == score['week']
+				 @games += 1
+				 @t6 = @t6 + score['total'].to_i
+			   end
+			 end
+		   end
 
-	<!-- Percentage Calculations -->
-	<%
-	    @total = session['total']
-		if @total == 0
-		  @done = 0
-		  @todo = 100.0
-		else
-		  @done = cnt.to_f / @total.to_f * 100.0
-		  @todo = 100.0 - @done
-		end
+		   if @games == 0
+			 @ppg6 = 0.0
+		   else
+			 @ppg6 = (@t6.to_f / @games.to_f).round(2)
+		   end
 
-		if (@total == cnt) and (@total > 0)
-			@started = false
-			session['started'] = false
-		end
-	%>
-  	<div class="col-md-2"></div>
-  	<div class="col-md-8">
-	    <br>
-	  	<button type="button" id="code" onclick="if (confirm_click()) { window.location.href='populatePlayers' };" value="Redirect" <%= @lock %> class="btn btn-lg btn-default" ><%= @text %></button>
-	 	<br>
+		   @ppm = 0
+		   @ppm6 = 0
+		   if player['total'] == 0
+			 @ppm = 0.0
+			 @ppm6 = 0.0
+		   else
+			 @ppm = (player['total'].to_f / player['value'].to_f).round(2)
+			 @ppm6 = (@t6 / player['value'].to_f).round(2)
+		   end
 
-		<div class="container">
-			<% if flash[:notice] %>
-			    <br>
-				<p class="alert alert-success"><%= flash[:notice] %>
-			<% end %>
-		</div>
+		   @ppmg = 0
+		   if @games == 0
+			 @ppmg = 0.0
+		   else
+			 @ppmg = (@ppm / @games).round(2)
+		   end
 
-	  	<% if @started %>
-		  	<meta http-equiv="refresh" content="5">
-		    <br>
-		  	Progress:
-			<div class="progress progress-striped active">
-				<div class="progress-bar progress-bar-success" style="width: <%= @done %>%"><%= cnt.to_s %></div>
-				<div class="progress-bar progress-bar-info" style="width: <%= @todo %>%"><%= @total.to_s %></div>
-			</div>
-		<% else %>
-		  <meta http-equiv="refresh" content="60000">
-		<% end %>
+		%>
+		<td><%= @t6 %></td> <!--Total over 6 games-->
+		<td><%= @games %></td> <!--Games played in last 6 games-->
+		<td><%= @ppg6 %></td> <!--Points per game over last 6 games-->
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><%= @ppm %></td> <!--Points per million-->
+		<td><%= @ppm6 %></td> <!--Points per million over last 6 games-->
+		<td></td>
+		<td><%= @ppmg %></td> <!--Point per million per game-->
+		<%
+		   @weeks.each do |week|
+			 @points = ''
+			 player['scores'].each do |score|
+			   if week.to_s == score['week']
+				 @points = score['total']
+			   end
+			 end
+		%>
+			<td><%= @points %></td>
+		<%
+		   end
+		%>
+	  </tr>
+  <%
+	 end
+  %>
+</table>
 
-	    <br>
-		<table class="table table-striped" align="center">
-			<tr>
-		        <td><b>Key</b></td>
-				<td><b>Name</b></td>
-				<td><b>Club</b></td>
-				<td><b>Val</b></td>
-		        <td><b>Tot</b></td>
-		        <td><b>G</b></td>
-		        <td><b>PPG</b></td>
-		        <td><b>T6</b></td>
-		        <td><b>G6</b></td>
-		        <td><b>PPG6</b></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td><b>PPM</b></td>
-		        <td><b>PPM6</b></td>
-		        <td></td>
-		        <td><b>PMG</b></td>
-			  <%
-				 @weeks.each do |week|
-			  %>
-				<td><b><%= week %></b></td>
-			  <%
-				 end
-			  %>
-			</tr>
-		    <%
-		       @players.each_with_index  do | player, index |
-			%>
-			<tr>
-		        <td><%= player['code'] %></td>
-		        <td><%= player['name'] %></td>
-				<td><%= player['team'] %></td>
-		        <td><%= player['value'] %></td>
-		        <td><%= player['total'] %></td>
-		        <td><%= player['scores'].count %></td> <!--Games-->
-		        <%
-		        	if player['scores'].count == 0
-		        		@ppg = 0.00
-		        	else
-		        		@ppg = (player['total'].to_f / player['scores'].count).round(2)
-		        	end	
-		        %>
-		        <td><%= @ppg %></td> <!--Points per Game-->
-
-		        <%
-		        	@t6 = 0
-		        	@g = 0
-		        	@last6weeks.each do |week|
-						player['scores'].each do |score|
-							if week == score['week']
-								@g += 1
-								@t6 = @t6 + score['total'].to_i
-							end
-						end
-					end
-					
-					if @g == 0
-						@ppg6 = 0.0
-					else
-						@ppg6 = (@t6.to_f / @g.to_f).round(2)
-					end
-					
-					@ppm = 0
-					@ppm6 = 0
-					if player['total'] == 0
-						@ppm = 0.0
-						@ppm6 = 0.0
-					else
-						@ppm = (player['total'].to_f / player['value'].to_f).round(2)
-						@ppm6 = (@t6 / player['value'].to_f).round(2)
-					end
-					
-					@ppmg = 0
-					if @g == 0
-						@ppmg = 0.0
-					else
-						@ppmg = (@ppm / @g).round(2)
-					end
-					
-		        %>
-		        <td><%= @t6 %></td> <!--Total over 6 games-->
-		        <td><%= @g %></td> <!--Games played in last 6 games-->
-		        <td><%= @ppg6 %></td> <!--Points per game over last 6 games-->
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td><%= @ppm %></td> <!--Points per million-->
-		        <td><%= @ppm6 %></td> <!--Points per million over last 6 games-->
-		        <td></td> 
-		        <td><%= @ppmg %></td> <!--Point per million per game-->
-		        <%
-				@weeks.each do |week|
-					@points = ''
-					player['scores'].each do |score|
-						if week.to_s == score['week']
-							@points = score['total']
-						end
-					end
-				%>	
-					<td><%= @points %></td>
-				<%	
-				end
-			  	%>
-			</tr>
-			<%
-				end
-			%> 
-		</table> 
-	</div>
-	<div class="col-md-2"></div>
-  </body>
-	<script>
-		function confirm_click() {
-			var confirmed = confirm("Are you sure?");
-
-			return confirmed;
-		}
-
-		jQuery(function ($) {
-			$('#code').click(function () {
-				var val = perc;
-				$('.progress-bar').width(val).text(val)
-			})
-		});
-	</script>
+<div class="col-md-2"></div>
+</body>
 
 </html>

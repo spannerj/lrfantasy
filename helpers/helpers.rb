@@ -1,4 +1,9 @@
-require 'watir-webdriver'
+require 'nokogiri'
+require 'open-uri'
+require 'openssl'
+
+OpenSSL::SSL.send(:remove_const, :VERIFY_PEER)
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
 # Sinatra module
 module Sinatra
@@ -13,134 +18,176 @@ module Sinatra
 		
 		class AppStatu < ActiveRecord::Base
 		end
-	
-		def logger
-			request.logger
-		end
-		
-		def get_player_count
-			b = Watir::Browser.new :phantomjs
-			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
-				row_count = b.table(:class => "data sortable").tbody.rows.length
-			ensure
-				b.close
+
+		def get_display_data
+			players = []
+			sql = '
+							select players.code, name, team, value, position, total, scores
+							from players, scores
+							where scores.code = players.code
+							order by substr(players.code,1,1), value desc
+						'
+			res = ActiveRecord::Base.connection.exec_query(sql)
+
+			res.each do | player |
+				player = format_player_scores(player)
+				players.push(player)
 			end
-			row_count
+
+			#calculate weeks
+			weeks = calculate_weeks
+			last6weeks = weeks[0..5]
+
+			return weeks, last6weeks, players
 		end
-	
-	  	def populate_database
-	  #		Player.delete_all
-			# Score.delete_all
-		
-			b = Watir::Browser.new :phantomjs
-			begin
-				b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/PLAYERS/all'
-				#b.goto 'https://fantasyfootball.telegraph.co.uk/premierleague/statistics/teams/mcy'
-				table_array = b.table(:class => "data sortable").links.to_a
-				links_array = []
-				table_array.each_with_index do |l, index|
-					
-				#if (index %2 == 0) then
-					links_array.push(l.href)
-				#end
+
+		def format_player_scores(player)
+			week_scores = []
+			weeks = player['scores'].split('@')
+
+			weeks.each do | week |
+
+				values = week.split(',')
+
+				case player['position']
+					when 'Goalkeeper'
+						points = values[14].to_i
+					when 'Defender'
+						points = values[13].to_i
+					when 'Midfielder', 'Striker'
+						points = values[10].to_i
+				end
+
+				existing_week_index = check_existing_week(week_scores, values[0])
+				if existing_week_index >= 0
+					week_scores[existing_week_index]['total'] = week_scores[existing_week_index]['total'] + points
+				else
+					score = {}
+					score['week'] = values[0]
+					score['total'] =  points
+					week_scores.push(score)
+				end
+
 			end
-	
-			links_array.each_with_index do |link, index|
-	
-				b.goto links_array[index]
-				
-				#store player id
+
+			player['scores'] = week_scores
+
+			player
+		end
+
+		def check_existing_week(week_scores, new_week)
+			week_scores.each_with_index do | week, i |
+				if week['week'] == new_week
+					return i
+				end
+			end
+
+			-1
+		end
+
+		def calculate_weeks
+			scores = Score.pluck(:scores)
+			week_set = Set.new
+
+			scores.each do | score |
+				weeks = score.split('@')
+				weeks.each do |week|
+					values = week.split(',')
+					week_set.add values[0].to_i
+				end
+			end
+			weeks = week_set.to_a
+			weeks.sort!
+			weeks.reverse!
+		end
+
+		def get_player_codes
+			as = AppStatu.first
+			url = 'https://fantasyfootball.telegraph.co.uk/premierleague/players/all'
+			data = Nokogiri::HTML(open(url))
+			link_list = []
+			data.search('.clubdata tbody tr').each do |row|
+				row.search('td').each do |td|
+					links = td.css('a')
+					unless links[0].nil?
+						link_list.push(links[0]['href'][-4,4])
+					end
+				end
+			end
+			as.player_count = link_list.count
+			as.save
+			link_list
+		end
+
+  	def populate_database
+
+			p 'Started'
+			p Time.now
+			as = AppStatu.first
+			as.started = Time.now.iso8601
+			as.scraping = true
+			as.save
+
+			@link_list.each_with_index do |link_code, i|
+				player_url = 'https://fantasyfootball.telegraph.co.uk/premierleague/statistics/points/' + link_code
+				player_page = Nokogiri::HTML(open(player_url))
 				player = Player.new
-				player.code = links_array[index][-4,4]
-				puts player.code
-				player.name = b.p(:id => 'stats-name').text
-				player.team = b.p(:id => 'stats-team').text
-				val = b.p(:id => 'stats-value').text
+				player.code = link_code
+				player.name = player_page.search('#stats-name').text
+				as.current_player = i+1
+				as.save
+
+				p 'Processing player '+ (i+1).to_s + ' of ' + @link_list.count.to_s + ', '+ 'code ' + player.code + ' who is ' + player.name + '.'
+
+				player.team = player_page.search('#stats-team').text
+				val = player_page.search('#stats-value').text
 				player.value = val.match(/^[£](\d.\d)[m]$/)[1]
-				player.position = b.p(:id => 'stats-position').text
-				player.total = b.p(:id => 'stats-points').text
-				
-				if !Player.exists?(:code => player.code)
+				player.position = player_page.search('#stats-position').text
+				player.total = player_page.search('#stats-points').text
+
+				unless Player.exists?(:code => player.code)
 					player.save
 				else
 					db_player = Player.find_by(:code => player.code)
 					db_player.update(:total => player.total)
-				end	
-	
-				b.goto link
-					
-				#extract points info
-				b.table(:class, "data sortable").tbody.rows.each do |row|
-					score = Score.new
-					score.code = player.code
-					row.cells.each_with_index do |cell, i|
-						case i
-							when 0
-								score.week = cell.text
-							when 1
-								score.opposition = cell.text
-							when 2
-								score.goals = cell.text.to_i
-							when 3
-								score.key_contribution = cell.text.to_i
-							when 4
-								score.started_game = cell.text.to_i
-							when 5
-								score.substitute_appearance = cell.text.to_i
-							when 6
-								score.yellow_card = cell.text.to_i
-							when 7
-								score.red_card = cell.text.to_i
-							when 8
-								score.missed_penalties = cell.text.to_i
-							when 9
-								if player.position == 'Goalkeeper'
-									score.saved_penalties = cell.text.to_i	
-								else	
-									score.own_goal = cell.text.to_i
-								end	
-							when 10
-								if player.position == 'Goalkeeper'
-									score.own_goal = cell.text.to_i	
-								elsif player.position == 'Defender'	
-									score.conceded = cell.text.to_i
-								else
-									score.points = cell.text.to_i	
-								end	
-							when 11
-								if player.position == 'Goalkeeper'
-									score.conceded = cell.text.to_i	
-								else
-									score.clean_sheet_full = cell.text.to_i	
-								end	
-							when 12
-								if player.position == 'Goalkeeper'
-									score.clean_sheet_full = cell.text.to_i	
-								else
-									score.clean_sheet_part = cell.text.to_i	
-								end	
-							when 13
-								if player.position == 'Goalkeeper'
-									score.clean_sheet_part = cell.text.to_i	
-								else
-									score.points = cell.text.to_i	
-								end	
-							when 14
-								score.points = cell.text.to_i
-						end
-					end
-					if !Score.exists?(:code => score.code, :opposition => score.opposition, :week => score.week)
-						score.save
-					end	
 				end
+
+				scores = ''
+				player_page.search('#individual-player tbody tr').each do |row|
+					week_score = ''
+
+					row.search('td').each do |cell|
+						week_score = week_score + cell.text + ','
+					end
+
+					scores = scores + week_score.chomp(',') + '@'
+				end
+
+				begin
+					Score.where( :code => player.code ).first_or_create( :code => player.code ).update( :scores => scores.chomp('@') )
+				rescue Exception => e
+					p e.message
+				end
+
 			end
-			as = AppStatu.take
-			as.last_refresh = Time.now.iso8601
+
+			@started = false
+			p 'Ended'
+			p Time.now
+
+			as.finished = Time.now.iso8601
+			as.scraping = false
+			as.current_player = 0
 			as.save
-			ensure
-				b.close
+		end
+
+		def app_init
+			if AppStatu.take.nil?
+				as = AppStatu.new(scraping: false, player_count: 0, current_player: 0, finished: Time.now.iso8601)
+				as.save
 			end
 		end
-  	end	
+
+	end
+
 end
