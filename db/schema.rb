@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -13,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20150903230817) do
 
-  create_table "app_status", force: true do |t|
+  create_table "app_status", force: :cascade do |t|
     t.datetime "started"
     t.datetime "finished"
     t.boolean  "scraping"
@@ -21,22 +20,20 @@ ActiveRecord::Schema.define(version: 20150903230817) do
     t.integer  "current_player"
   end
 
-  create_table "players", force: true do |t|
-    t.string "code"
-    t.string "name"
-    t.string "team"
-    t.string "value"
-    t.string "position"
-    t.string "total"
+  create_table "players", force: :cascade do |t|
+    t.string "code",     limit: 255
+    t.string "name",     limit: 255
+    t.string "team",     limit: 255
+    t.string "value",    limit: 255
+    t.string "position", limit: 255
+    t.string "total",    limit: 255
+    t.index ["code"], name: "index_players_on_code", unique: true
   end
 
-  add_index "players", ["code"], name: "index_players_on_code", unique: true
-
-  create_table "scores", force: true do |t|
-    t.string "code"
-    t.string "scores"
+  create_table "scores", force: :cascade do |t|
+    t.string "code",   limit: 255
+    t.string "scores", limit: 255
+    t.index ["code"], name: "index_scores_on_code", unique: true
   end
-
-  add_index "scores", ["code"], name: "index_scores_on_code", unique: true
 
 end

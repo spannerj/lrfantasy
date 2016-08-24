@@ -15,5 +15,4 @@ bundle config build.pg --with-pg-config=/usr/pgsql-9.3/bin/pg_config
 bundle install
 
 echo "rake the database"
-gem install rake --no-rdoc --no-ri
 rake db:migrate

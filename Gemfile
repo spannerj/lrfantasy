@@ -5,6 +5,7 @@ gem 'activerecord'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'nokogiri'
+gem 'rake'
 
 group :development, :test do
 	gem 'sqlite3'
