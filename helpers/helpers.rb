@@ -101,22 +101,25 @@ module Sinatra
 			weeks.reverse!
 		end
 
-		def get_player_codes
+		def get_player_data
+      p 'getting player data'
 			as = AppStatu.first
-			url = 'https://fantasyfootball.telegraph.co.uk/premierleague/players/all'
+			url = 'https://fantasyfootball.telegraph.co.uk/premier-league/statscentre/'
 			data = Nokogiri::HTML(open(url))
-			link_list = []
-			data.search('.clubdata tbody tr').each do |row|
-				row.search('td').each do |td|
-					links = td.css('a')
-					unless links[0].nil?
-						link_list.push(links[0]['href'][-4,4])
-					end
-				end
+
+			data.search('#table-players tbody tr').each do |row|
+        player = Player.new
+        player.code = row['data-playerid']
+        player.name = row['data-name']
+        player.team = row['data-teamname']
+        player.value = row['data-value'] #.match(/^[£](\d.\d)[m]$/)[1]
+        player.position = row['data-pos']
+        player.total = row['data-points']
+				player.save
+        p player
 			end
-			as.player_count = link_list.count
+			as.player_count = code_list.count
 			as.save
-			link_list
 		end
 
   	def populate_database
@@ -127,6 +130,8 @@ module Sinatra
 			as.started = Time.now.iso8601
 			as.scraping = true
 			as.save
+
+      get_player_data
 
 			@link_list.each_with_index do |link_code, i|
 				player_url = 'https://fantasyfootball.telegraph.co.uk/premierleague/statistics/points/' + link_code

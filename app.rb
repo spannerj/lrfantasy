@@ -43,10 +43,10 @@ class Footy < Sinatra::Base
 	end
 
 	get '/cron' do
-		@link_list = get_player_codes
-		Thread.new do
+		# @link_list = get_player_codes
+		# Thread.new do
 			populate_database
-		end
+		# end
 		status 200
 	end	
 end	
